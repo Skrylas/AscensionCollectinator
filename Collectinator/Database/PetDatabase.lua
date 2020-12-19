@@ -2,8 +2,8 @@
 -- ./DB/PetDatabase.lua
 -- Pet Database data for all of Collectinator
 --------------------------------------------------------------------------------------------------------------------
--- File date: 2010-07-27T16:06:54Z
--- Project version: v1.0.4
+-- File date: 2010-10-06T14:32:22Z
+-- Project version: v1.0.4-5-g96b932e
 --------------------------------------------------------------------------------------------------------------------
 -- Please see http://www.wowace.com/addons/collectinator/ for more information.
 --------------------------------------------------------------------------------------------------------------------
@@ -102,6 +102,8 @@ function addon:GetMiniPetTotal(PetDB)
 		addon:AddCompanion(PetDB, "CRITTER", SpellID, PetItemID, Rarity, Game)
 	end
 
+
+	
 -- 3.3 pets - not categorized
 	-- Core Hound Pup
 	AddPet(69452, 49646, R_RARE, GAME_WOTLK)

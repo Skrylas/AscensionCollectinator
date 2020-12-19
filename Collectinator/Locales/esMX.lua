@@ -7,7 +7,7 @@ esMX.lua
 esMX localization strings for Collectinator
 
 File date: 2010-04-04T16:38:43Z 
-Project version: v1.0.4
+Project version: v1.0.4-5-g96b932e
 
 Please update:
 http://www.wowace.com/projects/collectinator/localization/esMX/
@@ -34,10 +34,10 @@ local L = LibStub("AceLocale-3.0"):NewLocale("Collectinator", "esMX", false)
 
 if not L then return end
 
+L["\"Pretty Boy\" Duncan"] = "\"El Guapo\" Duncan"
 L["Adolescent Whelp"] = "Cría adolescente"
 L["Babagaya Shadowcleft"] = "Babagaya Hiendesombra"
 L["Bana Wildmane"] = "Bana Ferocrín"
 L["Belbi Quikswitch"] = "Belbi Tiratrastos"
 L["Blix Fixwidget"] = "Blix Chirimbolo"
 L["Bloodsail Deckhand"] = "Marinero de cubierta Velasangre"
-L["\"Pretty Boy\" Duncan"] = "\"El Guapo\" Duncan"

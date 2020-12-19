@@ -2,10 +2,10 @@
 -- Custom.lua
 -- Custom acquire data for all of Collectinator
 -------------------------------------------------------------------------------
--- File date: 2010-07-05T19:49:20Z
+-- File date: 2010-09-27T23:21:13Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: v1.0.4
+-- Project version: v1.0.4-5-g96b932e
 -------------------------------------------------------------------------------
 -- Format:
 -- 	self:addLookupList(CustomDB, Rep ID, Rep Name)
@@ -51,5 +51,6 @@ function addon:InitCustom(DB)
 	self:addLookupList(DB, 32, "Arena: Earned the Relentless Gladiator title in Season 7")
 	self:addLookupList(DB, 33, "Arena: Earned the Wrathful Gladiator title in Season 8")
 	self:addLookupList(DB, 34, "Prepay your account by November 2009, on Taiwan servers.")
+	self:addLookupList(DB, 35, "Since 2010, use the LFD took to queue for Coren Direbrew and upon defeating him you receive a Keg-Shaped Treasure Chest which may contain this mount.")
 end
 

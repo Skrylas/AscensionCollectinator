@@ -6,7 +6,7 @@
 -- File date: 2010-01-31T23:40:54Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: v1.0.4
+-- Project version: v1.0.4-5-g96b932e
 -------------------------------------------------------------------------------
 -- Code adopted from Crayon library
 -------------------------------------------------------------------------------

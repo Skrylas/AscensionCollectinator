@@ -9,7 +9,7 @@ Ace3 Configuration options for Collectinator
 File date: 2010-07-27T16:13:18Z
 File revision: @file-revision@
 Project revision: @project-revision@
-Project version: v1.0.4
+Project version: v1.0.4-5-g96b932e
 
 ****************************************************************************************
 

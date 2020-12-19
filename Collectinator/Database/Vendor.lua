@@ -6,7 +6,7 @@
 -- File date: 2010-04-22T18:21:37Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: v1.0.4
+-- Project version: v1.0.4-5-g96b932e
 -- Format:	self:addLookupList(DB, NPC ID, NPC Name, NPC Location, X Coord, Y Coord, Faction)
 -------------------------------------------------------------------------------
 local MODNAME	= "Collectinator"

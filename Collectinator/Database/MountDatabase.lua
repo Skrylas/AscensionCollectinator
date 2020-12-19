@@ -2,8 +2,8 @@
 -- ./DB/MountDatabase.lua
 -- Mount Database data for all of Collectinator
 --------------------------------------------------------------------------------------------------------------------
--- File date: 2010-07-27T20:59:45Z
--- Project version: v1.0.4
+-- File date: 2010-09-27T23:21:13Z
+-- Project version: v1.0.4-5-g96b932e
 --------------------------------------------------------------------------------------------------------------------
 -- Please see http://www.wowace.com/projects/collectinator/for more information.
 --------------------------------------------------------------------------------------------------------------------
@@ -108,6 +108,7 @@ function addon:GetMountTotal(DB)
 		end
 	end
 
+	
 -- ACHIEVEMENTS
 	-- Reins of the Albino Drake - 60025
 	AddMount(60025, 44178, R_EPIC, GAME_WOTLK)
@@ -1104,12 +1105,12 @@ function addon:GetMountTotal(DB)
 	-- Great Brewfest Kodo - 49379
 	AddMount(49379, 37828, R_EPIC, GAME_BC)
 	AddMountFlags(49379, F_ALLIANCE, F_HORDE, F_SEASONAL, F_MOB_DROP, F_BOP)
-	self:AddCompanionAcquire(DB, 49379, A_MOB, 23872, A_SEASONAL, 6)
+	self:AddCompanionAcquire(DB, 49379, A_MOB, 23872, A_SEASONAL, 6, A_CUSTOM, 35, A_ACHIEVEMENT, 3496)
 
 	-- Swift Brewfest Ram - 43900
 	AddMount(43900, 33977, R_EPIC, GAME_BC)
 	AddMountFlags(43900, F_ALLIANCE, F_HORDE, F_SEASONAL, F_MOB_DROP, F_BOP)
-	self:AddCompanionAcquire(DB, 43900, A_MOB, 23872, A_SEASONAL, 6)
+	self:AddCompanionAcquire(DB, 43900, A_MOB, 23872, A_SEASONAL, 6, A_CUSTOM, 35, A_ACHIEVEMENT, 3496)
 
 	-- The Horseman's Reins - 48025
 	AddMount(48025, 37012, R_EPIC, GAME_BC)

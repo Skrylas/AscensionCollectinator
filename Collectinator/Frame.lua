@@ -6,7 +6,7 @@
 -- File date: 2010-07-04T07:02:33Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: v1.0.4
+-- Project version: v1.0.4-5-g96b932e
 -------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
@@ -650,11 +650,11 @@ do
 
 			end
 
-			--[===[@alpha@
+			--@alpha@
 			if (loc["Coordx"] < -100) or (loc["Coordx"] > 100) or (loc["Coordy"] < -100) or (loc["Coordy"] > 100) then
 				addon:Print("DEBUG: Invalid location coordinates for ID " .. k .. " Location: " .. location)
 			end
-			--@end-alpha@]===]
+			--@end-alpha@
 
 			if zone and continent then
 				local iconuid = TomTom:AddZWaypoint(continent, zone, loc["Coordx"], loc["Coordy"], loc["Name"], false, minimap, worldmap)
@@ -1157,10 +1157,10 @@ local function GenerateTooltipContent(owner, rIndex)
 			else
 				ttAdd(0, -1, 0, v["AchievementDesc"], addon:hexcolor("NORMAL"))
 			end
-		--[===[@alpha@
+		--@alpha@
 		else	-- Unhandled
 			ttAdd(0, -1, 0, L["Unhandled Collectible"], addon:hexcolor("NORMAL"))
-		--@end-alpha@]===]
+		--@end-alpha@
 		end
 	end
 	CollectinatorTooltip:AddSeparator()
@@ -1572,9 +1572,9 @@ do
 		if misc == 0 then
 			cButton:SetScript("OnClick", function(self, button, down)
 							     if not FilterValueMap[scriptVal] then
-								     --[===[@alpha@
+								     --@alpha@
 								     self:Print("No entry for "..scriptVal.." in FilterValueMap.")
-								     --@end-alpha@]===]
+								     --@end-alpha@
 								     return
 							     end
 							     FilterValueMap[scriptVal].svroot[scriptVal] = FilterValueMap[scriptVal].cb:GetChecked() and true or false
@@ -2027,12 +2027,12 @@ local function expandEntry(dsIndex)
 
 				tinsert(DisplayStrings, dsIndex, t)
 				dsIndex = dsIndex + 1
-		--[===[@alpha@
+		--@alpha@
 		elseif	(v["Type"] > A_MAX) then -- We have an acquire type we aren't sure how to deal with.
 			t.String = "Unhandled Acquire Case - Type: " .. v["Type"]
 			tinsert(DisplayStrings, dsIndex, t)
 			dsIndex = dsIndex + 1
-		--@end-alpha@]===]
+		--@end-alpha@
 		end
 	end
 	return dsIndex
