@@ -404,9 +404,11 @@ do
 
 		-- Vendors and reputations are treated the same way basically
 		if (v["Type"] == A_VENDOR) or (v["Type"] == A_REPUTATION) then
-			display = ((vendorDB[v["ID"]]["Faction"] == BFAC[myFaction]) or (vendorDB[v["ID"]]["Faction"] == BFAC["Neutral"]))
+			local vendor = vendorDB[v["ID"]]
+			display = (vendor and vendor["Faction"] == BFAC[myFaction]) or (vendor and vendor["Faction"] == BFAC["Neutral"])			
 		elseif (v["Type"] == A_QUEST) then
-			display = ((questDB[v["ID"]]["Faction"] == BFAC[myFaction]) or (questDB[v["ID"]]["Faction"] == BFAC["Neutral"]))
+			local quest = questDB[v["ID"]]
+			display = (quest and quest["Faction"] == BFAC[myFaction]) or (quest and quest["Faction"] == BFAC["Neutral"])			
 		-- Always show mob drops
 		elseif (v["Type"] == A_MOB) then
 			display = true
@@ -971,7 +973,7 @@ local function GenerateTooltipContent(owner, rIndex)
 			if qst then
 				left_color = addon:hexcolor("QUEST")
 				-- Don't display quests of opposite faction
-				local displaytt = false
+				local displaytt = true
 				local faction
 
 				if qst["Faction"] == factionHorde then
@@ -1023,7 +1025,7 @@ local function GenerateTooltipContent(owner, rIndex)
 				right_color = addon:hexcolor("HIGH")
 				ttAdd(1, -2, 1, v["ID"], left_color, cStr, right_color)
 			else
-				local displaytt = false
+				local displaytt = true
 
 				if rep_vendor["Faction"] == factionHorde then
 					if playerFaction == factionHorde then
