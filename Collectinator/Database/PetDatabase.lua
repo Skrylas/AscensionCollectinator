@@ -101,8 +101,6 @@ function addon:GetMiniPetTotal(PetDB)
 		num_pets = num_pets + 1
 		addon:AddCompanion(PetDB, "CRITTER", SpellID, PetItemID, Rarity, Game)
 	end
-
-
 	
 -- 3.3 pets - not categorized
 	-- Core Hound Pup

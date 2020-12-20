@@ -902,7 +902,8 @@ local function GenerateTooltipContent(owner, rIndex)
 				ttAdd(1, -2, 1, v["ID"], left_color, cStr, right_color)
 			else
 				-- Don't display vendors of opposite faction
-				local displaytt = false
+				
+				local displaytt = true
 				local faction
 
 				if (vendor["Faction"] == factionHorde) then
@@ -1113,7 +1114,7 @@ local function GenerateTooltipContent(owner, rIndex)
 
 				left_color = addon:hexcolor("VENDOR")
 				-- Don't display vendors of opposite faction
-				local displaytt = false
+				local displaytt = true
 				local faction
 
 				if (vendor["Faction"] == factionHorde) then
