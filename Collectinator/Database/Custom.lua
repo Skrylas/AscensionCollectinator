@@ -52,5 +52,13 @@ function addon:InitCustom(DB)
 	self:addLookupList(DB, 33, "Arena: Earned the Wrathful Gladiator title in Season 8")
 	self:addLookupList(DB, 34, "Prepay your account by November 2009, on Taiwan servers.")
 	self:addLookupList(DB, 35, "Since 2010, use the LFD took to queue for Coren Direbrew and upon defeating him you receive a Keg-Shaped Treasure Chest which may contain this mount.")
+	self:addLookupList(DB, 36, "Ascension Web Store.")
+	self:addLookupList(DB, 37, "Bazaar Vendor.")
+	self:addLookupList(DB, 38, "Challenge Mode")
+	self:addLookupList(DB, 39, "Hidden in the world.")
+	self:addLookupList(DB, 40, "Invasion reward.")
+	self:addLookupList(DB, 41, "Sold on the Pre-TBC Gold Sink vendor.")
+	self:addLookupList(DB, 42, "Bloodbowl reward.")
+	self:addLookupList(DB, 43, "Drop from Grumpus from the Ascension Christmas event.")
 end
 
