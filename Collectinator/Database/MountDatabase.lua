@@ -1,9 +1,9 @@
---------------------------------------------------------------------------------------------------------------------
+﻿--------------------------------------------------------------------------------------------------------------------
 -- ./DB/MountDatabase.lua
 -- Mount Database data for all of Collectinator
 --------------------------------------------------------------------------------------------------------------------
--- File date: 2010-09-27T23:21:13Z
--- Project version: v1.0.4-5-g96b932e
+-- File date: 2010-10-13T22:53:45Z
+-- Project version: 1.0.5
 --------------------------------------------------------------------------------------------------------------------
 -- Please see http://www.wowace.com/projects/collectinator/for more information.
 --------------------------------------------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ function addon:GetMountTotal(DB)
 	-- Wrapper function
 	-------------------------------------------------------------------------------
 	local function AddMount(SpellID, MountItemID, Rarity, Game, Class)
-		addon:AddCompanion(DB, "MOUNT", SpellID, MountItemID, Rarity, Game, Class)
+		addon:AddCompanion(DB, "mount", SpellID, MountItemID, Rarity, Game, Class)
 		num_mounts = num_mounts + 1
 	end
 
@@ -107,6 +107,58 @@ function addon:GetMountTotal(DB)
 			num_mounts = num_mounts - 1
 		end
 	end
+
+	
+	--[[
+	--------------------------------------------------------------------------------------------------------------------------
+	CATACLYSM NEW SAID TO BE MOUNTS
+	-------------------------------------------------
+	-- Golden King
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+    -- Tan Riding Camel
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+    -- Grey Riding Camel
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+    -- Brown Riding Camel
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+    -- Drake of the South Wind
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+    -- Drake of the North Wind
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+	-- Drake of the West Wind
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+	-- Vitreous Stone Drake
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	
+	-- Phosphorescent Stone Drake
+	AddMount()
+	AddMountFlags()
+	self:AddCompanionAcquire()
+	--------------------------------------------------------------------------------------------------------------------------
+	-]]
 	
 -- ACHIEVEMENTS
 	-- Reins of the Albino Drake - 60025
@@ -276,15 +328,17 @@ function addon:GetMountTotal(DB)
 	-------------------------------------------------------------------------------
 	-- Paladin Mounts.
 	-------------------------------------------------------------------------------
+	if MY_CLASS == "PALADIN" then
 		-- Warhorse - Horde - 34769
-		AddMount(34769, nil, R_RARE, GAME_BC)
+		AddMount(34769, nil, R_RARE, GAME_BC, C_PALADIN)
 		AddMountFlags(34769, F_HORDE, F_VENDOR, F_QUEST, F_BOP)
 		--self:AddCompanionAcquire(DB, 34769,
 
 		-- Charger - Horde - 34767
-		AddMount(34767, nil, R_EPIC, GAME_BC)
+		AddMount(34767, nil, R_EPIC, GAME_BC, C_PALADIN)
 		AddMountFlags(34767, F_HORDE, F_VENDOR, F_QUEST, F_BOP)
 		--self:AddCompanionAcquire(DB, 34767,
+	end
 
 	-------------------------------------------------------------------------------
 	-- Orgrimmar Mounts.
@@ -683,15 +737,17 @@ function addon:GetMountTotal(DB)
 	-------------------------------------------------------------------------------
 	-- Paladin Mounts.
 	-------------------------------------------------------------------------------
+	if MY_CLASS == "PALADIN" then
 		-- Warhorse - Alliance - 13819
-		AddMount(13819, nil, R_RARE, GAME_ORIG)
+		AddMount(13819, nil, R_RARE, GAME_ORIG, C_PALADIN)
 		AddMountFlags(13819, F_ALLIANCE, F_VENDOR, F_QUEST, F_BOP)
 		--self:AddCompanionAcquire(DB, 13819,
 
 		-- Charger - Alliance - 23214
-		AddMount(23214, nil, R_EPIC, GAME_ORIG)
+		AddMount(23214, nil, R_EPIC, GAME_ORIG, C_PALADIN)
 		AddMountFlags(23214, F_ALLIANCE, F_VENDOR, F_QUEST, F_BOP)
 		--self:AddCompanionAcquire(DB, 23214,
+	end
 
 	-- White Mechanostrider Mod B - 15779
 	AddMount(15779, 13326, R_EPIC, GAME_ORIG)
@@ -1214,8 +1270,9 @@ function addon:GetMountTotal(DB)
 	self:AddCompanionAcquire(DB, 72286, A_MOB, 36597, A_ACHIEVEMENT, 4625)
 
 --CLASS
+	if MY_CLASS == "WARLOCK" then
 		-- Felsteed - 5784
-		AddMount(5784, nil, R_RARE, GAME_ORIG)
+		AddMount(5784, nil, R_RARE, GAME_ORIG, C_WARLOCK)
 		AddMountFlags(5784, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
 		self:AddCompanionAcquire(DB, 5784,
 					 A_VENDOR, 16646, A_VENDOR, 5173, A_VENDOR, 23534, A_VENDOR, 5172, A_VENDOR, 16266,
@@ -1225,7 +1282,7 @@ function addon:GetMountTotal(DB)
 					 A_VENDOR, 5495, A_VENDOR, 16648, A_VENDOR, 3326)
 
 		-- Dreadsteed - 23161
-		AddMount(23161, nil, R_EPIC, GAME_ORIG)
+		AddMount(23161, nil, R_EPIC, GAME_ORIG, C_WARLOCK)
 		AddMountFlags(23161, F_ALLIANCE, F_HORDE, F_VENDOR, F_QUEST, F_BOP)
 		self:AddCompanionAcquire(DB, 23161, A_QUEST, 7631,
 					 A_VENDOR, 16646, A_VENDOR, 5173, A_VENDOR, 23534, A_VENDOR, 5172, A_VENDOR, 16266,
@@ -1233,22 +1290,27 @@ function addon:GetMountTotal(DB)
 					 A_VENDOR, 988, A_VENDOR, 4564, A_VENDOR, 906, A_VENDOR, 3325, A_VENDOR, 4565,
 					 A_VENDOR, 2127, A_VENDOR, 5496, A_VENDOR, 6251, A_VENDOR, 16647, A_VENDOR, 5171,
 					 A_VENDOR, 5495, A_VENDOR, 16648, A_VENDOR, 3326)
+	end
 
+	if MY_CLASS == "DEATHKNIGHT" then
 		-- Acherus Deathcharger - 48778
-		AddMount(48778, nil, 1, GAME_WOTLK)
+		AddMount(48778, nil, 1, GAME_WOTLK, C_DK)
 		AddMountFlags(48778, F_ALLIANCE, F_HORDE, F_QUEST, F_BOP)
 		self:AddCompanionAcquire(DB, 48778, A_QUEST, 12687)
 
 		-- Winged Steed of the Ebon Blade - 54729
-		AddMount(54729, 40775, R_EPIC, GAME_WOTLK)
+		AddMount(54729, 40775, R_EPIC, GAME_WOTLK, C_DK)
 		AddMountFlags(54729, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
 		self:AddCompanionAcquire(DB, 54729, A_VENDOR, 29587)
+	end
 
 --REP VENDOR ARGENT
+	if MY_CLASS == "PALADIN" then
 		-- Argent Charger - 66906
-		AddMount(66906, 47179, R_EPIC, GAME_WOTLK)
+		AddMount(66906, 47179, R_EPIC, GAME_WOTLK, C_PALADIN)
 		AddMountFlags(66906, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
 		self:AddCompanionAcquire(DB, 66906, A_VENDOR, 34885)
+	end
 
 --REP VENDOR NEUTRAL
 		-- Argent Warhorse - 67466

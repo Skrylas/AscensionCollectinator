@@ -1,5 +1,5 @@
-## Title: Collectinator
-## X-Curse-Packaged-Version: v1.0.4-5-g96b932e
+﻿## Title: Collectinator
+## X-Curse-Packaged-Version: 1.0.5
 ## X-Curse-Project-Name: Collectinator
 ## X-Curse-Project-ID: collectinator
 ## X-Curse-Repository-ID: wow/collectinator/mainline
@@ -10,10 +10,10 @@
 ## eMail: ackis AT shaw DOT ca
 ## X-Donate: http://www.wowace.com/addons/collectinator/#w-donations
 
-## Interface: 30300
-## Version: 1.0.4
-## X-Revision: v1.0.4-5-g96b932e
-## X-Date: 2010-07-27T22:27:14Z
+## Interface: 40000
+## Version: 1.0.5
+## X-Revision: 1.0.5
+## X-Date: 2010-10-13T22:54:05Z
 
 ## X-Category: Interface
 ## X-Localizations: enUS, deDE, esES, esMX, frFR, koKR, ruRU, zhCN, zhTW

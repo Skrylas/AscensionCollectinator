@@ -1,7 +1,7 @@
--------------------------------------------------------------------------------
+﻿-------------------------------------------------------------------------------
 -- Collectinator
--- File date: 2010-05-12T21:12:23Z
--- Project version: v1.0.4-5-g96b932e
+-- File date: 2010-10-13T22:57:42Z
+-- Project version: 1.0.5
 -- Authors: Ackis, Torhal, Pompachomp
 -------------------------------------------------------------------------------
 
@@ -175,7 +175,7 @@ function addon:OnInitialize()
 			ignoreexclusionlist = false,
 			includeknownfiltered = false,
 			spelltooltiplocation = "Right",
-			acquiretooltiplocation = "Right",
+			acquiretooltiplocation = "Mouse",
 			hidepopup = false,
 			minimap = true,
 			worldmap = true,
@@ -322,7 +322,7 @@ function addon:OnInitialize()
 	-------------------------------------------------------------------------------
 	-- Create the scan button.
 	-------------------------------------------------------------------------------
-	local button = CreateFrame("Button", "Collectinator_ScanButton", PetPaperDollFrameCompanionFrame, "UIPanelButtonTemplate")
+	local button = CreateFrame("Button", "Collectinator_ScanButton", SpellBookFrame, "UIPanelButtonTemplate")
 	self.ScanButton = button
 
 	-- Add to PetList+
@@ -339,21 +339,20 @@ function addon:OnInitialize()
 	button:RegisterForClicks("LeftButtonUp")
 	button:SetScript("OnClick",
 				  function()
-					  local companion_frame = PetPaperDollFrameCompanionFrame
-					  local is_visible = (PetListPlus and PetListPlusFrame:IsVisible()) or (CE_Pets and CE_Pets:IsVisible()) or companion_frame:IsVisible()
+					  local companion_frame = SpellBookFrame
+					  local is_visible = (PetListPlus and PetListPlusFrame:IsVisible()) or (CE_Pets and CE_Pets:IsVisible()) or SpellBookCompanionModelFrame:IsVisible()
 					  -- Alt-Shift (Warcraft Pets)
 					  if IsShiftKeyDown() and IsAltKeyDown() and not IsControlKeyDown() then
 						  addon:Scan(true, false, "pets")
-
 					  -- Shift only (Text Dump)
 					  elseif IsShiftKeyDown() and not IsAltKeyDown() and not IsControlKeyDown() then
-						  addon:Scan(true, false, is_visible and companion_frame.mode or "CRITTER")
+						  addon:Scan(true, false, is_visible and companion_frame.currentTab.bookType)
 					  -- Alt only (Wipe icons from map)
 					  elseif not IsShiftKeyDown() and IsAltKeyDown() and not IsControlKeyDown() then
 						  addon:ClearMap()
 					  -- If we are just clicking do the scan
 					  elseif not IsShiftKeyDown() and not IsAltKeyDown() and not IsControlKeyDown() then
-						  addon:Scan(false, false, is_visible and companion_frame.mode or "CRITTER")
+						  addon:Scan(false, false, is_visible and companion_frame.currentTab.bookType)
 						  self:SetupMap()
 					  end
 				  end)
@@ -376,7 +375,7 @@ function addon:OnInitialize()
 	button:Enable()
 	button:ClearAllPoints()
 
-	button:SetPoint("RIGHT", CharacterFrameCloseButton, "LEFT", 4, 0)
+	button:SetPoint("RIGHT", SpellBookFrameCloseButton, "LEFT", 4, 0)
 	button:SetWidth(addon.ScanButton:GetTextWidth() + 10)
 
 	button:Show()
@@ -384,21 +383,21 @@ function addon:OnInitialize()
 	-------------------------------------------------------------------------------
 	-- Add mini-pet/mount totals to the tab
 	-------------------------------------------------------------------------------
-	PetPaperDollFrameTab2:SetScript("OnEnter",
+	SpellBookFrameTabButton5:SetScript("OnEnter",
 					function(this)
 						GameTooltip_SetDefaultAnchor(GameTooltip, this)
 						GameTooltip:SetText(string.format("%d %s.", GetNumCompanions("CRITTER"), PETS))
 						GameTooltip:Show()
 					end)
-	PetPaperDollFrameTab2:SetScript("OnLeave", function() GameTooltip:Hide() end)
+	SpellBookFrameTabButton5:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
-	PetPaperDollFrameTab3:SetScript("OnEnter",
+	SpellBookFrameTabButton4:SetScript("OnEnter",
 					function(this)
 						GameTooltip_SetDefaultAnchor(GameTooltip, this)
 						GameTooltip:SetText(string.format("%d %s.", GetNumCompanions("MOUNT"), MOUNTS))
 						GameTooltip:Show()
 					end)
-	PetPaperDollFrameTab3:SetScript("OnLeave", function() GameTooltip:Hide() end)
+	SpellBookFrameTabButton4:SetScript("OnLeave", function() GameTooltip:Hide() end)
 
 	-------------------------------------------------------------------------------
 	-- Initialize the databases
@@ -487,10 +486,10 @@ end
 function addon:COMPANION_LEARNED()
 	local companion_frame = self.ScanButton:GetParent()
 
-	if companion_frame:IsVisible() then
-		self:Scan(false, false, companion_frame.mode)
+	if SpellBookCompanionModelFrame:IsVisible() then
+		self:Scan(false, false, companion_frame.currentTab.bookType)
 	else
-		self:Scan(false, true, companion_frame.mode)
+		self:Scan(false, true, companion_frame.currentTab.bookType)
 	end
 end
 
@@ -562,17 +561,17 @@ end	-- do
 -- @return None, array is passed as a reference.
 function addon:AddCompanion(DB, CompanionType, SpellID, ItemID, Rarity, Game)
 	if DB[SpellID] then	-- If the entry already exists, abort.
-		--@alpha@
+		--[===[@alpha@
 		self:Print("Duplicate companion - "..SpellID.." "..ItemID)
-		--@end-alpha@
+		--@end-alpha@]===]
 		return
 	end
 
 	if not Rarity then
 		Rarity = 0
-		--@alpha@
+		--[===[@alpha@
 		self:Print("SpellID "..SpellID..": ("..CompanionType..") Rarity is nil, setting to 0.")
-		--@end-alpha@
+		--@end-alpha@]===]
 	end
 	DB[SpellID] = {
 		["Name"]	= GetSpellInfo(SpellID) or "Unknown ("..SpellID..")",
@@ -648,11 +647,11 @@ do
 			local acquire_type, acquire_id = select(i, ...)
 			i = i + 2
 
-			--@alpha@
+			--[===[@alpha@
 			if acquire[index] then
 				self:Print("AddCompanionAcquire called more than once for SpellID "..SpellID)
 			end
-			--@end-alpha@
+			--@end-alpha@]===]
 
 			acquire[index] = {
 				["Type"] = acquire_type,
@@ -667,17 +666,17 @@ do
 				i = i + 1
 
 				acquire[index]["Crafted"] = acquire_id
-				--@alpha@
+				--[===[@alpha@
 			elseif acquire_type == A_SEASONAL then
 				if not acquire_id then
 					self:Print("SpellID "..SpellID..": SeasonalID is nil.")
 				end
-				--@end-alpha@
+				--@end-alpha@]===]
 			elseif acquire_type == A_ACHIEVEMENT then
 				if not acquire_id then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": AchievementID is nil.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				else
 					local _, achievement_name, _, _, _, _, _, achievement_desc = GetAchievementInfo(acquire_id)
 					acquire[index]["Achievement"] = achievement_name
@@ -685,13 +684,13 @@ do
 				end
 			elseif acquire_type == A_MOB then
 				if not acquire_id then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": MobID is nil.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				elseif not MobList[acquire_id] then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": Mob ID "..acquire_id.." does not exist in the database.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				else
 					location = MobList[acquire_id]["Location"]
 
@@ -704,13 +703,13 @@ do
 				end
 			elseif acquire_type == A_QUEST then
 				if not acquire_id then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": QuestID is nil.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				elseif not QuestList[acquire_id] then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": Quest ID "..acquire_id.." does not exist in the database.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				else
 					location = QuestList[acquire_id]["Location"]
 
@@ -721,13 +720,13 @@ do
 				end
 			elseif acquire_type == A_VENDOR then
 				if not acquire_id then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": VendorID is nil.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				elseif not VendorList[acquire_id] then
-					--@alpha@
+					--[===[@alpha@
 					self:Print("SpellID "..SpellID..": VendorID "..acquire_id.." does not exist in the database.")
-					--@end-alpha@
+					--@end-alpha@]===]
 				else
 					location = VendorList[acquire_id]["Location"]
 
@@ -747,7 +746,7 @@ do
 				VendorList[RepVendor]["SellList"] = VendorList[RepVendor]["SellList"] or {}
 				VendorList[RepVendor]["SellList"][SpellID] = true
 
-				--@alpha@
+				--[===[@alpha@
 				if not acquire_id then
 					self:Print("SpellID "..SpellID..": ReputationID is nil.")
 				elseif not ReputationList[acquire_id] then
@@ -759,7 +758,7 @@ do
 				elseif not VendorList[RepVendor] then
 					self:Print("SpellID "..SpellID..": Reputation VendorID "..RepVendor.." does not exist in the database.")
 				end
-				--@end-alpha@
+				--@end-alpha@]===]
 			elseif acquire_type == A_WORLD_DROP then
 				location = L["World Drop"]
 
@@ -784,9 +783,9 @@ end	-- do
 -- 2 - comma-led suffix
 function addon:AddTitle(title_id, title_type, era)
 	if TitleDB[title_id] then
-		--@alpha@
+		--[===[@alpha@
 		self:Print("Duplicate title - "..title_id)
-		--@end-alpha@
+		--@end-alpha@]===]
 		return
 	end
 	TitleDB[title_id] = {
@@ -820,9 +819,9 @@ do
 
 	function addon:addLookupList(DB, ID, Name, Loc, Coordx, Coordy, Faction)
 		if DB[ID] then
-			--@alpha@
+			--[===[@alpha@
 			self:Print("Duplicate lookup: "..tostring(ID).." "..Name)
-			--@end-alpha@
+			--@end-alpha@]===]
 			return
 		end
 
@@ -845,11 +844,11 @@ do
 
 			DB[ID]["Name"] = quest_name and quest_name or "Missing name: Quest "..ID
 		end
-		--@alpha@
+		--[===[@alpha@
 		if not Loc and DB ~= ReputationList and DB ~= CustomList and DB ~= SeasonalList then
 			self:Print("Spell ID: " .. ID .. " (" .. DB[ID]["Name"] .. ") has an unknown location.")
 		end
-		--@end-alpha@
+		--@end-alpha@]===]
 	end
 end
 
@@ -1340,7 +1339,7 @@ function addon:Scan(textdump, autoupdatescan, scantype)
 	addon:GetFactionLevels(playerData["Reputation"])
 
 	if not autoupdatescan and scantype then
-		local filter_type = (scantype == "pets" and "CRITTER" or scantype)
+		local filter_type = (scantype == "pets" and "companions" or scantype)
 		self:UpdateFilters(CompanionDB, playerData, filter_type)	-- Add filtering flags to the items
 
 		-- Mark excluded items
@@ -1450,9 +1449,9 @@ do
 		twipe(texttable)
 		local collectible_typename
 
-		if(collectible_type == "CRITTER") then
+		if(collectible_type == "companions") then
 			collectible_typename = "\"Pets\""
-		elseif(collectible_type == "MOUNT") then
+		elseif(collectible_type == "mount") then
 			collectible_typename = "\"Mounts\""
 		end
 
@@ -1564,7 +1563,7 @@ function addon:GetWarcraftPets(PetDB)
 	local t = {}
 
 	for i, k in pairs(PetDB) do
-		if PetDB[i]["Known"] == true and PetDB[i]["Type"] == "CRITTER" then
+		if PetDB[i]["Known"] == true and PetDB[i]["Type"] == "companions" then
 			tinsert(t, "["..i.."]")
 		end
 	end

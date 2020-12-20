@@ -7,7 +7,7 @@ zhCN.lua
 zhCN localization strings for Collectinator
 
 File date: 2010-04-04T16:38:43Z 
-Project version: v1.0.4-5-g96b932e
+Project version: 1.0.5
 
 Please update:
 http://www.wowace.com/projects/collectinator/localization/zhCN/

@@ -5,7 +5,7 @@
 -- File date: 2010-09-27T23:21:13Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: v1.0.4-5-g96b932e
+-- Project version: 1.0.5
 -------------------------------------------------------------------------------
 -- Format:
 -- 	self:addLookupList(CustomDB, Rep ID, Rep Name)

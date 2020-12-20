@@ -1,12 +1,12 @@
--------------------------------------------------------------------------------
+﻿-------------------------------------------------------------------------------
 -- Frame.lua
 -------------------------------------------------------------------------------
 -- Frame functions for all of Collectinator
 -------------------------------------------------------------------------------
--- File date: 2010-07-04T07:02:33Z
+-- File date: 2010-10-13T22:53:45Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: v1.0.4-5-g96b932e
+-- Project version: 1.0.5
 -------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
@@ -99,14 +99,14 @@ local C_DK, C_DRUID, C_HUNTER, C_MAGE, C_PALADIN, C_PRIEST, C_ROGUE, C_SHAMAN, C
 
 -- Returns the index type based on the supplied string.
 local INDEX_TYPE = {
-	["CRITTER"]	= 1,
-	["MOUNT"]	= 2,
+	["companions"]	= 1,
+	["mount"]	= 2,
 }
 
 -- Returns the index string based on the supplied type.
 local INDEX_STRING = {
-	[1] = "CRITTER",
-	[2] = "MOUNT",
+	[1] = "companions",
+	[2] = "mount",
 }
 
 -------------------------------------------------------------------------------
@@ -164,8 +164,8 @@ local Collectinator_RepOldWorldCB, Collectinator_RepBCCB, Collectinator_RepLKCB,
 
 -- To make tabbing between collections easier
 local SortedCollections = {
-	{ name = "CRITTER", 	texture = "minipets" }, -- 1
-	{ name = "MOUNT", 	texture = "mounts" }, 	-- 2
+	{ name = "companions", 	texture = "minipets" }, -- 1
+	{ name = "mount", 	texture = "mounts" }, 	-- 2
 }
 local MaxCollections = 2
 
@@ -404,11 +404,9 @@ do
 
 		-- Vendors and reputations are treated the same way basically
 		if (v["Type"] == A_VENDOR) or (v["Type"] == A_REPUTATION) then
-			local vendor = vendorDB[v["ID"]]
-			display = (vendor and vendor["Faction"] == BFAC[myFaction]) or (vendor and vendor["Faction"] == BFAC["Neutral"])			
+			display = ((vendorDB[v["ID"]]["Faction"] == BFAC[myFaction]) or (vendorDB[v["ID"]]["Faction"] == BFAC["Neutral"]))
 		elseif (v["Type"] == A_QUEST) then
-			local quest = questDB[v["ID"]]
-			display = (quest and quest["Faction"] == BFAC[myFaction]) or (quest and quest["Faction"] == BFAC["Neutral"])			
+			display = ((questDB[v["ID"]]["Faction"] == BFAC[myFaction]) or (questDB[v["ID"]]["Faction"] == BFAC["Neutral"]))
 		-- Always show mob drops
 		elseif (v["Type"] == A_MOB) then
 			display = true
@@ -652,11 +650,11 @@ do
 
 			end
 
-			--@alpha@
+			--[===[@alpha@
 			if (loc["Coordx"] < -100) or (loc["Coordx"] > 100) or (loc["Coordy"] < -100) or (loc["Coordy"] > 100) then
 				addon:Print("DEBUG: Invalid location coordinates for ID " .. k .. " Location: " .. location)
 			end
-			--@end-alpha@
+			--@end-alpha@]===]
 
 			if zone and continent then
 				local iconuid = TomTom:AddZWaypoint(continent, zone, loc["Coordx"], loc["Coordy"], loc["Name"], false, minimap, worldmap)
@@ -904,8 +902,7 @@ local function GenerateTooltipContent(owner, rIndex)
 				ttAdd(1, -2, 1, v["ID"], left_color, cStr, right_color)
 			else
 				-- Don't display vendors of opposite faction
-				
-				local displaytt = true
+				local displaytt = false
 				local faction
 
 				if (vendor["Faction"] == factionHorde) then
@@ -936,7 +933,7 @@ local function GenerateTooltipContent(owner, rIndex)
 					left_color = addon:hexcolor("NORMAL")
 					right_color = addon:hexcolor("HIGH")
 					ttAdd(1, -2, 1, vendor["Location"], left_color, cStr, right_color)
-				elseif faction and companion["Type"] ~= "MOUNT" then
+				elseif faction and companion["Type"] ~= "mount" then
 					ttAdd(0, -1, 0, faction.." "..L["Vendor"], left_color)
 				end
 			end
@@ -973,7 +970,7 @@ local function GenerateTooltipContent(owner, rIndex)
 			if qst then
 				left_color = addon:hexcolor("QUEST")
 				-- Don't display quests of opposite faction
-				local displaytt = true
+				local displaytt = false
 				local faction
 
 				if qst["Faction"] == factionHorde then
@@ -1025,7 +1022,7 @@ local function GenerateTooltipContent(owner, rIndex)
 				right_color = addon:hexcolor("HIGH")
 				ttAdd(1, -2, 1, v["ID"], left_color, cStr, right_color)
 			else
-				local displaytt = true
+				local displaytt = false
 
 				if rep_vendor["Faction"] == factionHorde then
 					if playerFaction == factionHorde then
@@ -1116,7 +1113,7 @@ local function GenerateTooltipContent(owner, rIndex)
 
 				left_color = addon:hexcolor("VENDOR")
 				-- Don't display vendors of opposite faction
-				local displaytt = true
+				local displaytt = false
 				local faction
 
 				if (vendor["Faction"] == factionHorde) then
@@ -1160,10 +1157,10 @@ local function GenerateTooltipContent(owner, rIndex)
 			else
 				ttAdd(0, -1, 0, v["AchievementDesc"], addon:hexcolor("NORMAL"))
 			end
-		--@alpha@
+		--[===[@alpha@
 		else	-- Unhandled
 			ttAdd(0, -1, 0, L["Unhandled Collectible"], addon:hexcolor("NORMAL"))
-		--@end-alpha@
+		--@end-alpha@]===]
 		end
 	end
 	CollectinatorTooltip:AddSeparator()
@@ -1575,9 +1572,9 @@ do
 		if misc == 0 then
 			cButton:SetScript("OnClick", function(self, button, down)
 							     if not FilterValueMap[scriptVal] then
-								     --@alpha@
+								     --[===[@alpha@
 								     self:Print("No entry for "..scriptVal.." in FilterValueMap.")
-								     --@end-alpha@
+								     --@end-alpha@]===]
 								     return
 							     end
 							     FilterValueMap[scriptVal].svroot[scriptVal] = FilterValueMap[scriptVal].cb:GetChecked() and true or false
@@ -2030,12 +2027,12 @@ local function expandEntry(dsIndex)
 
 				tinsert(DisplayStrings, dsIndex, t)
 				dsIndex = dsIndex + 1
-		--@alpha@
+		--[===[@alpha@
 		elseif	(v["Type"] > A_MAX) then -- We have an acquire type we aren't sure how to deal with.
 			t.String = "Unhandled Acquire Case - Type: " .. v["Type"]
 			tinsert(DisplayStrings, dsIndex, t)
 			dsIndex = dsIndex + 1
-		--@end-alpha@
+		--@end-alpha@]===]
 		end
 	end
 	return dsIndex
@@ -2594,7 +2591,7 @@ local function SetFramePosition()
 
 	if (opts.anchorTo == "") then
 		-- no values yet, clamp to whatever frame is appropriate
-		addon.Frame:SetPoint("TOPLEFT", PetPaperDollFrameCompanionFrame, "TOPRIGHT", 10, 0)
+		addon.Frame:SetPoint("TOPLEFT", SpellBookFrame, "TOPRIGHT", 10, 0)
 	else
 		if (addon.Frame._Expanded == true) then
 			if (opts.anchorFrom == "TOPLEFT") or
@@ -4057,15 +4054,15 @@ function addon:DisplayFrame(
 
 	WipeDisplayStrings()	-- reset current display items
 
-	local companion_frame = PetPaperDollFrameCompanionFrame
+	local companion_frame = SpellBookFrame
 	local hide_frame;
 
-	if (PetListPlus and PetListPlusFrame:IsVisible()) or (CE_Pets and CE_Pets:IsVisible()) or companion_frame:IsVisible() then
+	if (PetListPlus and PetListPlusFrame:IsVisible()) or (CE_Pets and CE_Pets:IsVisible()) or SpellBookCompanionModelFrame:IsVisible() then
 		-- frame is visible, check for same scan
 		if self.Frame and self.Frame:IsVisible() then
-			if (current_tab ~= INDEX_TYPE[companion_frame.mode] or current_tab == 0) then
+			if (current_tab ~= INDEX_TYPE[companion_frame.currentTab.bookType] or current_tab == 0) then
 				--new scan > show
-				current_tab = INDEX_TYPE[companion_frame.mode] or 0
+				current_tab = INDEX_TYPE[companion_frame.currentTab.bookType] or 0
 			else
 				--same scan > hide
 				addon:CloseWindow()
@@ -4073,7 +4070,7 @@ function addon:DisplayFrame(
 			end
 		-- frame is not visible, show anyway
 		else
-			current_tab = INDEX_TYPE[companion_frame.mode] or 0
+			current_tab = INDEX_TYPE[companion_frame.currentTab.bookType] or 0
 		end
 	end
 

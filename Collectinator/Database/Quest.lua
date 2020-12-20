@@ -11,7 +11,7 @@ Quest data for all of Collectinator
 File date: 2010-04-16T00:40:14Z
 File revision: @file-revision@
 Project revision: @project-revision@
-Project version: v1.0.4-5-g96b932e
+Project version: 1.0.5
 
 ************************************************************************
 

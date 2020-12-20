@@ -11,7 +11,7 @@ Seasonal.lua
 File date: 2010-02-08T19:58:52Z
 File revision: @file-revision@
 Project revision: @project-revision@
-Project version: v1.0.4-5-g96b932e
+Project version: 1.0.5
 
 ************************************************************************
 
