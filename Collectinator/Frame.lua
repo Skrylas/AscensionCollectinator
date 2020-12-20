@@ -3413,8 +3413,6 @@ local function InitializeFrame()
 	local Collectinator_ArtifactCB = CreateFrame("CheckButton", "Collectinator_ArtifactCB", addon.Fly_Rarity, "UICheckButtonTemplate")
 	addon:GenericMakeCB(Collectinator_ArtifactCB, addon.Fly_Rarity, L["Artifact_DESC"], "artifact", 7, 1, 0)
 	Collectinator_ArtifactCBText:SetText(L["Artifact"])
-	Collectinator_ArtifactCBText:SetText(addon:Grey(L["Artifact"]))
-	Collectinator_ArtifactCB:Disable()
 
 	-------------------------------------------------------------------------------
 	-- Reputation flyout
