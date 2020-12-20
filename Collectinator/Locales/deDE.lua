@@ -7,7 +7,7 @@ deDE.lua
 deDE localization strings for Collectinator
 
 File date: 2010-03-30T00:31:02Z 
-Project version: 1.0.5
+Project version: v1.0.4-5-g96b932e
 
 Please update:
 http://www.wowace.com/projects/collectinator/localization/deDE/

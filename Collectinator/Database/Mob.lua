@@ -6,7 +6,7 @@
 -- File date: 2010-04-27T19:29:41Z
 -- File revision: @file-revision@
 -- Project revision: @project-revision@
--- Project version: 1.0.5
+-- Project version: v1.0.4-5-g96b932e
 -------------------------------------------------------------------------------
 local MODNAME	= "Collectinator"
 local addon	= LibStub("AceAddon-3.0"):GetAddon(MODNAME)

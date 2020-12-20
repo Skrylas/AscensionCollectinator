@@ -7,7 +7,7 @@ enUS localization strings for Collectinator
 File date: 2010-01-07T00:17:44Z 
 File revision: @file-revision@ 
 Project revision: @project-revision@
-Project version: 1.0.5
+Project version: v1.0.4-5-g96b932e
 
 Original translated by: Ackis
 Currently maintained by: Ackis
