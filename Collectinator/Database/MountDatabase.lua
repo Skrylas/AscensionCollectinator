@@ -1214,31 +1214,31 @@ function addon:GetMountTotal(DB)
 	self:AddCompanionAcquire(DB, 72286, A_MOB, 36597, A_ACHIEVEMENT, 4625)
 
 --CLASS
-		-- Felsteed - 5784
-		AddMount(5784, nil, R_RARE, GAME_ORIG)
-		AddMountFlags(5784, F_ALLIANCE, F_HORDE, F_QUEST, F_BOP)
-		self:AddCompanionAcquire(DB, 5784, A_QUEST, 4488, A_QUEST, 4489)
+	-- Felsteed - 5784
+	AddMount(5784, nil, R_RARE, GAME_ORIG)
+	AddMountFlags(5784, F_ALLIANCE, F_HORDE, F_QUEST, F_BOP)
+	self:AddCompanionAcquire(DB, 5784, A_QUEST, 4488, A_QUEST, 4489)
 
-		-- Dreadsteed - 23161
-		AddMount(23161, nil, R_EPIC, GAME_ORIG)
-		AddMountFlags(23161, F_ALLIANCE, F_HORDE, F_QUEST, F_QUEST, F_BOP)
-		self:AddCompanionAcquire(DB, 23161, A_QUEST, 7631)
+	-- Dreadsteed - 23161
+	AddMount(23161, nil, R_EPIC, GAME_ORIG)
+	AddMountFlags(23161, F_ALLIANCE, F_HORDE, F_QUEST, F_QUEST, F_BOP)
+	self:AddCompanionAcquire(DB, 23161, A_QUEST, 7631)
 
-		-- Acherus Deathcharger - 48778
-		AddMount(48778, nil, 1, GAME_WOTLK)
-		AddMountFlags(48778, F_ALLIANCE, F_HORDE, F_QUEST, F_BOP)
-		self:AddCompanionAcquire(DB, 48778, A_QUEST, 12687)
+	-- Acherus Deathcharger - 48778
+	AddMount(48778, nil, 1, GAME_WOTLK)
+	AddMountFlags(48778, F_ALLIANCE, F_HORDE, F_QUEST, F_BOP)
+	self:AddCompanionAcquire(DB, 48778, A_QUEST, 12687)
 
-		-- Winged Steed of the Ebon Blade - 54729
-		AddMount(54729, 40775, R_EPIC, GAME_WOTLK)
-		AddMountFlags(54729, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
-		self:AddCompanionAcquire(DB, 54729, A_VENDOR, 29587)
+	-- Winged Steed of the Ebon Blade - 54729
+	AddMount(54729, 40775, R_EPIC, GAME_WOTLK)
+	AddMountFlags(54729, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(DB, 54729, A_VENDOR, 29587)
 
 --REP VENDOR ARGENT
-		-- Argent Charger - 66906
-		AddMount(66906, 47179, R_EPIC, GAME_WOTLK)
-		AddMountFlags(66906, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
-		self:AddCompanionAcquire(DB, 66906, A_VENDOR, 34885)
+	-- Argent Charger - 66906
+	AddMount(66906, 47179, R_EPIC, GAME_WOTLK)
+	AddMountFlags(66906, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(DB, 66906, A_VENDOR, 34885)
 
 --REP VENDOR NEUTRAL
 		-- Argent Warhorse - 67466
@@ -1435,10 +1435,10 @@ function addon:GetMountTotal(DB)
 	self:AddCompanionAcquire(DB, 26656, A_ACHIEVEMENT, 416, A_QUEST, 8743)
 
 --TCG
-	-- Riding Tutle - 30174
-	AddMount(30174, 23720, R_EPIC, GAME_ORIG)
-	AddMountFlags(30174, F_ALLIANCE, F_HORDE, F_TCG, F_BOP)
-	self:AddCompanionAcquire(DB, 30174, A_CUSTOM, 1)
+	-- Riding Turtle - 30174
+	AddMount(30174, 23720, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(30174, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 30174, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- Reins of the Spectral Tiger - 42776
 	AddMount(42776, 33224, R_RARE, GAME_BC)
@@ -1446,9 +1446,9 @@ function addon:GetMountTotal(DB)
 	self:AddCompanionAcquire(DB, 42776, A_CUSTOM, 1)
 
 	-- Reins of the Swift Spectral Tiger - 42777
-	AddMount(42777, 33225, R_EPIC, GAME_BC)
-	AddMountFlags(42777, F_ALLIANCE, F_HORDE, F_TCG)
-	self:AddCompanionAcquire(DB, 42777, A_CUSTOM, 1)
+	AddMount(42777, 33225, R_ARTIFACT, GAME_BC)
+	AddMountFlags(42777, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 42777, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- X-51 Nether-Rocket - 46197
 	AddMount(46197, 35225, R_RARE, GAME_BC)
@@ -1461,14 +1461,14 @@ function addon:GetMountTotal(DB)
 	self:AddCompanionAcquire(DB, 46199, A_CUSTOM, 1)
 
 	-- Big Battle Bear - 51412
-	AddMount(51412, 38576, R_EPIC, GAME_WOTLK)
-	AddMountFlags(51412, F_ALLIANCE, F_HORDE, F_TCG)
-	self:AddCompanionAcquire(DB, 51412, A_CUSTOM, 1)
+	AddMount(51412, 38576, R_ARTIFACT, GAME_WOTLK)
+	AddMountFlags(51412, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 51412, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- Magic Rooster - 65917
-	AddMount(65917, 49290, R_EPIC, GAME_WOTLK)
-	AddMountFlags(65917, F_ALLIANCE, F_HORDE, F_TCG)
-	self:AddCompanionAcquire(DB, 65917, A_CUSTOM, 1)
+	AddMount(65917, 49290, R_ARTIFACT, GAME_WOTLK)
+	AddMountFlags(65917, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 65917, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- Blazing Hippogryph - 74856
 	AddMount(74856, 54069, R_EPIC, GAME_WOTLK)
@@ -1491,41 +1491,230 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(75614, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 75614, A_CUSTOM, 4, A_CUSTOM, 36)
 	
+	-- Core Hound - 988101
+	AddMount(988101, 99477, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988101, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988101, A_CUSTOM, 36)
+	
+	-- Darkmoon Bear - 979862
+	AddMount(979862, 98472, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979862, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979862, A_CUSTOM, 36)
+	
+	-- Decaying Reins of the Vilebrood Vanquisher - 499218
+	AddMount(499218, 499389, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499218, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499218, A_CUSTOM, 36)
+	
+	-- Felflame Talbuk - 985350
+	AddMount(985350, 99489, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(985350, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 985350, A_CUSTOM, 36)
+	
+	-- Flametouched Raven - 170016
+	AddMount(170016, 170001, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(170016, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 170016, A_CUSTOM, 36)
+	
+	-- Frostcharger - 170019
+	AddMount(170019, 170002, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(170019, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 170019, A_CUSTOM, 36)
+	
+		-- Ghostly Charger - 979863
+	AddMount(979863, 98473, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979863, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979863, A_CUSTOM, 36)
+	
+	-- Glorious Felcrusher - 498801
+	AddMount(498801, 499307, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(498801, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 498801, A_CUSTOM, 36)
+	
+	-- High Priest's Lightsworn Seeker - 499766
+	AddMount(499766, 499638, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499766, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499766, A_CUSTOM, 36)
+	
+	-- Kor'kron Juggernaut - 499769
+	AddMount(499769, 499639, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499769, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499769, A_CUSTOM, 36)
+	
+	-- Lucid Nightmare - 499688
+	AddMount(499688, 499583, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499688, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499688, A_CUSTOM, 36)
+	
+	-- Misty Fox - 979858
+	AddMount(979858, 98476, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979858, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979858, A_CUSTOM, 36)
+	
+	-- Mystic Runesaber - 988116
+	AddMount(988116, 99482, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988116, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988116, A_CUSTOM, 36)
+	
+	-- Pandaren Kite String - 499181
+	AddMount(499181, 499378, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499181, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499181, A_CUSTOM, 36)
+	
+	-- Ratstallion - 979873
+	AddMount(979873, 98479, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979873, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979873, A_CUSTOM, 36)
+	
+	-- Reins of the Accursed Wrathsteed - 988125
+	AddMount(988125, 99485, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988125, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988125, A_CUSTOM, 36)
+	
+	-- Reins of the Bloodgorged Crawg - 499921
+	AddMount(499921, 499945, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499921, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499921, A_CUSTOM, 36)
+	
+	-- Reins of the Explorer's Dunetrekker - 499823
+	AddMount(499823, 499674, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499823, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499823, A_CUSTOM, 36)
+	
+	-- Reins of the Felsworn Direwolf - 499995
+	AddMount(499995, 499995, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499995, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499995, A_CUSTOM, 36)
+	
+	-- Reins of the Heavenly Onyx Cloud Serpent - 499224
+	AddMount(499224, 499391, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499224, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499224, A_CUSTOM, 36)
+	
+	-- Reins of the Highmountain Elderhorn - 988107
+	AddMount(988107, 99479, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988107, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988107, A_CUSTOM, 36)
+	
+	-- Reins of the Mechagon Peacekeeper - 499924
+	AddMount(499924, 499942, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499924, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499924, A_CUSTOM, 36)
+	
+	-- Reins of the Royal Snapdragon - 499930
+	AddMount(499930, 499944, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499930, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499930, A_CUSTOM, 36)
+	
+	-- Reins of the Spectral Steed - 985005
+	AddMount(985005, 98490, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(985005, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 985005, A_CUSTOM, 36)
+	
+	-- Reins of the Valorous Charger - 988122
+	AddMount(988122, 99484, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988122, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988122, A_CUSTOM, 36)
+	
+	-- Reins of the Vigilant Charger - 498791
+	AddMount(498791, 499203, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(498791, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 498791, A_CUSTOM, 36)
+	
+	-- Reins of the Westfall Donkey - 988119
+	AddMount(988119, 99483, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988119, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988119, A_CUSTOM, 36)
+	
+	-- Savage Raptor - 979860
+	AddMount(979860, 69228, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979860, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979860, A_CUSTOM, 36)
+	
+	-- Seabiscuit's Reins - 966002
+	AddMount(966002, 597601, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(966002, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 966002, A_CUSTOM, 36)
+	
+	-- Shadow Fel Hound - 988104
+	AddMount(988104, 99478, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988104, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988104, A_CUSTOM, 36)
+	
+	-- Snowy Hyena - 988110
+	AddMount(988110, 99480, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(988110, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 988110, A_CUSTOM, 36)
+	
+	-- Spawn of Galakras - 498806
+	AddMount(498806, 499308, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(498806, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 498806, A_CUSTOM, 36)
+	
+	-- Squeakers - 499789
+	AddMount(499789, 499664, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499789, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499789, A_CUSTOM, 36)
+	
+	-- Swift Shorestrider - 979861
+	AddMount(979861, 71718, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979861, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979861, A_CUSTOM, 36)
+	
+	-- Tear of Elune - 979870
+	AddMount(979870, 98480, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979870, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979870, A_CUSTOM, 36)
+	
+	-- Valarjar Stormwing - 499947
+	AddMount(499947, 499309, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499947, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499947, A_CUSTOM, 36)
+	
+	-- Wriggling Parasite - 498796
+	AddMount(498796, 499304, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(498796, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 498796, A_CUSTOM, 36)
+	
+	-- Dawnforge Ram - 499670
+	AddMount(499670, 499539, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499670, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499670, A_CUSTOM, 36)
 
 -- OTHER CUSTOM
 	-- Arboreal Gulper - 498616
 	AddMount(498616, 499181, R_ARTIFACT, GAME_BC)
-	AddMountFlags(498616, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	AddMountFlags(498616, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
 	self:AddCompanionAcquire(DB, 498616, A_CUSTOM, 39)
 	
 	-- Bound Blue Qiraji Resonating Crystal - 1002146
 	AddMount(1002146, 1002011, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(1002146, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
+	AddMountFlags(1002146, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 1002146, A_CUSTOM, 40)
 	
 	-- Bound Green Qiraji Resonating Crystal - 1002149
 	AddMount(1002149, 1002013, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(1002149, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
+	AddMountFlags(1002149, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 1002149, A_CUSTOM, 40)
 	
 	-- Bound Red Qiraji Resonating Crystal - 1002147
 	AddMount(1002147, 1002012, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(1002147, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
+	AddMountFlags(1002147, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 1002147, A_CUSTOM, 40)
 
 	-- Bound Yellow Qiraji Resonating Crystal - 1002148
 	AddMount(1002148, 1002014, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(1002148, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
+	AddMountFlags(1002148, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 1002148, A_CUSTOM, 40)
 
 	-- Clutch of Ji-Kun - 499575
 	AddMount(499575, 499425, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499575, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	AddMountFlags(499575, F_ALLIANCE, F_HORDE, F_VENDOR, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 499575, A_CUSTOM, 41)
 
 	-- Enchanted Fey Dragon - 499580
 	AddMount(499580, 499426, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499580, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	AddMountFlags(499580, F_ALLIANCE, F_HORDE, F_VENDOR, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 499580, A_CUSTOM, 41)
 
 	-- Felfire Hawk - 499207
@@ -1535,17 +1724,17 @@ function addon:GetMountTotal(DB)
 
 	-- Gilded Ravasaur - 170034
 	AddMount(170034, 170007, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(170034, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	AddMountFlags(170034, F_ALLIANCE, F_HORDE, F_VENDOR, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 170034, A_CUSTOM, 41)
 
 	-- Grinning Reaver - 988113
 	AddMount(988113, 99481, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(988113, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOA)
+	AddMountFlags(988113, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 988113, A_CUSTOM, 40)
 
 	-- Gurubashi Blood Raptor - 170040
 	AddMount(170040, 170009, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(170040, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
+	AddMountFlags(170040, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 170040, A_CUSTOM, 42)
 	
 	-- Ironclad War Wolf - 170013
@@ -1560,7 +1749,7 @@ function addon:GetMountTotal(DB)
 
 	-- Netherlords Chaotic Wrathsteed - 499570
 	AddMount(499570, 499424, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499570, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	AddMountFlags(499570, F_ALLIANCE, F_HORDE, F_VENDOR, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB,499570, A_CUSTOM, 41)
 
 	-- Nyalotha Allseer - 499164
@@ -1595,7 +1784,7 @@ function addon:GetMountTotal(DB)
 
 	-- Reins of the Scourgelords Deathcharger - 499998
 	AddMount(499998, 499998, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499998, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
+	AddMountFlags(499998, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(DB, 499998, A_CUSTOM, 40)
 
 	-- Uncorrupted Voidwing - 499176
@@ -1607,6 +1796,12 @@ function addon:GetMountTotal(DB)
 	AddMount(9930979, 121815, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(9930979, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOA)
 	self:AddCompanionAcquire(DB, 9930979, A_CUSTOM, 39)
+	
+	-- Smoldering Ember Wyrm - 499600
+	AddMount(499600, 499438, R_ARTIFACT, GAME_BC)
+	AddMountFlags(499600, F_ALLIANCE, F_HORDE, F_RAID, F_BOA)
+	self:AddCompanionAcquire(DB, 499600, A_MOB, 17225)
+
 
 
 -- QUEST

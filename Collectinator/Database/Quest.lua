@@ -77,6 +77,7 @@ function addon:InitQuest(DB)
 	AddQuest(12687,	BZ["The Scarlet Enclave"],	51.9,	35.5,	NEUTRAL)
 	AddQuest(4485,	BZ["Stormwind City"],		50.5,	47.5,	ALLIANCE)
 	AddQuest(4488,	BZ["Stormwind City"],		25.4,	78.2,	ALLIANCE)
+	AddQuest(1661,	BZ["Stormwind City"],		40.0,	29.8,	ALLIANCE)
 	AddQuest(4489,	BZ["Undercity"],			86.0,	15.6,	HORDE)
 
 	-- Bag of Fishing Treasures
