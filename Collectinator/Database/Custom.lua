@@ -62,5 +62,6 @@ function addon:InitCustom(DB)
 	self:addLookupList(DB, 43, "Drop from Grumpus from the Ascension Christmas event.")
 	self:addLookupList(DB, 44, "Seasonal box/reward.")
 	self:addLookupList(DB, 45, "PVP Reward.")
+	self:addLookupList(DB, 46, "Sigil - Rare, Elite or Boss mob drop.")
 end
 

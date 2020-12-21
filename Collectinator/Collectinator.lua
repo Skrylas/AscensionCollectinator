@@ -220,6 +220,7 @@ function addon:OnInitialize()
 					bc = true,
 					wrath = true,
 					store = true,
+					sigil = false,
 				},
 				-------------------------------------------------------------------------------
 				-- Binding Filters
@@ -895,7 +896,7 @@ do
 	-- Filter flags
 	-------------------------------------------------------------------------------
 	local F_ALLIANCE, F_HORDE, F_VENDOR, F_QUEST, F_CRAFT, F_INSTANCE, F_RAID, F_SEASONAL, F_WORLD_DROP, F_MOB_DROP = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-	local F_TCG, F_SPEC_EVENT, F_COLLECTORS, F_REMOVED, F_ACHIEVEMENT, F_PVP, F_STORE = 11, 12, 13, 14, 15, 16, 77
+	local F_TCG, F_SPEC_EVENT, F_COLLECTORS, F_REMOVED, F_ACHIEVEMENT, F_PVP, F_STORE, F_SIGIL = 11, 12, 13, 14, 15, 16, 77, 99
 	local F_BOE, F_BOP, F_BOA = 17, 18, 19
 	local F_ALCH, F_BS, F_COOKING, F_ENCH, F_ENG, F_FIRST_AID, F_INSC, F_JC, F_LW, F_SMELT, F_TAILOR, F_FISHING = 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
 
@@ -1204,6 +1205,10 @@ do
 		end
 
 		if obtain_db.store and flags[F_STORE] then
+			return true
+		end
+		
+		if obtain_db.sigil and flags[F_SIGIL] then
 			return true
 		end
 
