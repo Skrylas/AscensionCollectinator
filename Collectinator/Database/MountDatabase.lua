@@ -252,12 +252,12 @@ function addon:GetMountTotal(DB)
 	-------------------------------------------------------------------------------
 	-- Sunreaver Hawkstrider - 66091
 	AddMount(66091, 46816, R_EPIC, GAME_WOTLK)
-	AddMountFlags(66091, F_HORDE, F_VENDOR, F_BOP, F_WRATHCOMMON1)
+	AddMountFlags(66091, F_HORDE, F_VENDOR, F_BOP, F_WRATHCOMMON2)
 	self:AddCompanionAcquire(DB, 66091, A_REPUTATION, 1124, EXALTED, 34772)
 
 	-- Sunreaver Dragonhawk - 66088
 	AddMount(66088, 46814, R_EPIC, GAME_WOTLK)
-	AddMountFlags(66088, F_HORDE, F_VENDOR, F_BOP, F_WRATHCOMMON1)
+	AddMountFlags(66088, F_HORDE, F_VENDOR, F_BOP, F_WRATHCOMMON2)
 	self:AddCompanionAcquire(DB, 66088, A_REPUTATION, 1124, EXALTED, 34772)
 
 	-------------------------------------------------------------------------------
@@ -672,12 +672,12 @@ function addon:GetMountTotal(DB)
 	-------------------------------------------------------------------------------
 	-- Quel'dorei Steed - 66090
 	AddMount(66090, 46815, R_EPIC, GAME_WOTLK)
-	AddMountFlags(66090, F_ALLIANCE, F_VENDOR, F_BOP, F_WRATHCOMMON1)
+	AddMountFlags(66090, F_ALLIANCE, F_VENDOR, F_BOP, F_WRATHCOMMON2)
 	self:AddCompanionAcquire(DB, 66090, A_REPUTATION, 1094, EXALTED, 34881)
 
 	-- Silver Covenant Hippogryph - 66087
 	AddMount(66087, 46813, R_EPIC, GAME_WOTLK)
-	AddMountFlags(66087, F_ALLIANCE, F_VENDOR, F_BOP, F_WRATHCOMMON1)
+	AddMountFlags(66087, F_ALLIANCE, F_VENDOR, F_BOP, F_WRATHCOMMON2)
 	self:AddCompanionAcquire(DB, 66087, A_REPUTATION, 1094, EXALTED, 34881)
 
 	-------------------------------------------------------------------------------

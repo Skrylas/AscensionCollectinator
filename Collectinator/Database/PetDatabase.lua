@@ -6609,13 +6609,13 @@ function addon:GetMiniPetTotal(PetDB)
 	if MY_FACTION == FACTION_ALLIANCE then
 		-- Shimmering Wyrmling -- 66096
 		AddPet(66096, 46820, R_RARE, GAME_WOTLK)
-		self:AddCompanionFlags(PetDB, 66096, F_ALLIANCE, F_VENDOR, F_BOE, WRATHCOMMON1)
+		self:AddCompanionFlags(PetDB, 66096, F_ALLIANCE, F_VENDOR, F_BOE, WRATHCOMMON2)
 		self:AddCompanionAcquire(PetDB, 66096, A_REPUTATION, 1094, EXALTED, 34881)
 
 	elseif MY_FACTION == FACTION_HORDE then
 		-- Shimmering Wyrmling -- 66096
 		AddPet(66096, 46821, R_RARE, GAME_WOTLK)
-		self:AddCompanionFlags(PetDB, 66096, F_HORDE, F_VENDOR, F_BOE, WRATHCOMMON1)
+		self:AddCompanionFlags(PetDB, 66096, F_HORDE, F_VENDOR, F_BOE, WRATHCOMMON2)
 		self:AddCompanionAcquire(PetDB, 66096, A_REPUTATION, 1124, EXALTED, 34772)
 	end
 	return num_pets
