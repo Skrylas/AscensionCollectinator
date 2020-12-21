@@ -2075,12 +2075,12 @@ function addon:GetMountTotal(DB)
 	
 	-- Warsong Wolf - 499984
 	AddMount(499984, 499984, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499984, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
+	AddMountFlags(499984, F_HORDE, F_PVP, F_BOA)
 	self:AddCompanionAcquire(DB, 499984, A_CUSTOM, 45)
 	
 	-- Silverwing Nightsaber - 499987
 	AddMount(499987, 499987, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499987, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
+	AddMountFlags(499987, F_ALLIANCE, F_PVP, F_BOA)
 	self:AddCompanionAcquire(DB, 499987, A_CUSTOM, 45)
 	
 	-- Silent Glider - 499212
