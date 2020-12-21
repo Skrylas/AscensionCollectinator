@@ -47,6 +47,7 @@ function addon:InitVendor(DB)
 	self:addLookupList(DB, 31910,	L["Geen"],				BZ["Sholazar Basin"],		54.5, 56.2,	NEUTRAL)
 	self:addLookupList(DB, 31916,	L["Tanaika"],				BZ["Howling Fjord"],		25.5, 58.7,	NEUTRAL)
 	self:addLookupList(DB, 32763,	L["Sairuk"],				BZ["Dragonblight"],		48.5, 75.7,	NEUTRAL)
+	self:addLookupList(DB, 18525,	L["G'eras"],				BZ["Shattrath City"],		50.8, 42.4,	NEUTRAL)
 
 	-------------------------------------------------------------------------------
 	-- World Events

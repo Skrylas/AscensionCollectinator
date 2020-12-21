@@ -144,7 +144,7 @@ function addon:GetMiniPetTotal(PetDB)
 	self:AddCompanionFlags(PetDB, 61991, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
 	self:AddCompanionAcquire(PetDB, 61991, A_ACHIEVEMENT, 2516)
 
-	-- Perky Pug - 70600
+	-- Perky Pug - 70613
 	AddPet(70613, 49912, R_RARE, GAME_WOTLK)
 	self:AddCompanionFlags(PetDB, 70613, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_BOP)
 	self:AddCompanionAcquire(PetDB, 70613, A_CUSTOM, 15)
@@ -738,8 +738,8 @@ function addon:GetMiniPetTotal(PetDB)
 
 	-- Onyxian Whelpling - 69002
 	AddPet(69002, 49362, R_COMMON, GAME_WOTLK)
-	self:AddCompanionFlags(PetDB, 69002, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_SPEC_EVENT, F_REMOVED, F_BOA)
-	self:AddCompanionAcquire(PetDB, 69002, A_ACHIEVEMENT, 4400)
+	self:AddCompanionFlags(PetDB, 69002, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_SPEC_EVENT, F_STORE, F_BOA)
+	self:AddCompanionAcquire(PetDB, 69002, A_ACHIEVEMENT, 4400, A_CUSTOM, 36)
 
 	-- Mr. Chilly - 55068
 	AddPet(55068, 41133, R_RARE, GAME_WOTLK)
@@ -805,15 +805,25 @@ function addon:GetMiniPetTotal(PetDB)
 	self:AddCompanionFlags(PetDB, 28505, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 28505, A_CUSTOM, 7)
 
+	-- Red Dragon Orb - 23531
+	AddPet(23531, 19055, R_COMMON, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 23531, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOA)
+	self:AddCompanionAcquire(PetDB, 23531, A_CUSTOM, 7)
+				
+	-- Green Dragon Orb - 23530
+	AddPet(23530, 19054, R_COMMON, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 23530, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOA)
+	self:AddCompanionAcquire(PetDB, 23530, A_CUSTOM, 7)
+
 	-- Fortune Coin - 40405 (Lucky)
 	AddPet(40405, 32498, R_RARE, GAME_TBC)
 	self:AddCompanionFlags(PetDB, 40405, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 40405, A_CUSTOM, 12)
 
 	-- Tyrael's Hilt - 53082
-	AddPet(53082, 39656, R_RARE, GAME_TBC)
-	self:AddCompanionFlags(PetDB, 53082, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_BOA)
-	self:AddCompanionAcquire(PetDB, 53082, A_ACHIEVEMENT, 414)
+	AddPet(53082, 39656, R_ARTIFACT, GAME_TBC)
+	self:AddCompanionFlags(PetDB, 53082, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_STORE, F_BOA)
+	self:AddCompanionAcquire(PetDB, 53082, A_ACHIEVEMENT, 414, A_CUSTOM, 36)
 
 	-- Warbot
 	AddPet(65682, 46767, R_RARE, GAME_WOTLK)
@@ -822,19 +832,19 @@ function addon:GetMiniPetTotal(PetDB)
 
 --TCG
 	-- Banana Charm - 40549
-	AddPet(40549, 32588, R_RARE, GAME_TBC)
-	self:AddCompanionFlags(PetDB, 40549, F_ALLIANCE, F_HORDE, F_TCG, F_BOP)
-	self:AddCompanionAcquire(PetDB, 40549, A_CUSTOM, 1)
+	AddPet(40549, 32588, R_ARTIFACT, GAME_TBC)
+	self:AddCompanionFlags(PetDB, 40549, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(PetDB, 40549, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- Rocket Chicken - 45125
-	AddPet(45125, 34492, R_RARE, GAME_TBC)
-	self:AddCompanionFlags(PetDB, 45125, F_ALLIANCE, F_HORDE, F_TCG, F_BOP)
-	self:AddCompanionAcquire(PetDB, 45125, A_CUSTOM, 1)
+	AddPet(45125, 34492, R_ARTIFACT, GAME_TBC)
+	self:AddCompanionFlags(PetDB, 45125, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(PetDB, 45125, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- Dragon Kite - 45127
-	AddPet(45127, 34493, R_EPIC, GAME_TBC)
-	self:AddCompanionFlags(PetDB, 45127, F_ALLIANCE, F_HORDE, F_TCG, F_BOP)
-	self:AddCompanionAcquire(PetDB, 45127, A_CUSTOM, 1)
+	AddPet(45127, 34493, R_ARTIFACT, GAME_TBC)
+	self:AddCompanionFlags(PetDB, 45127, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(PetDB, 45127, A_CUSTOM, 1, A_CUSTOM, 36)
 
 	-- Hippogryph Hatchling - 30156
 	AddPet(30156, 23713, R_EPIC, GAME_TBC)
@@ -858,9 +868,9 @@ function addon:GetMiniPetTotal(PetDB)
 
 --PURCHASED
 	-- Lil' K.T. - 69677
-	AddPet(69677, 49693, R_RARE, GAME_WOTLK)
+	AddPet(69677, 49693, R_ARTIFACT, GAME_WOTLK)
 	self:AddCompanionFlags(PetDB, 69677, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
-	self:AddCompanionAcquire(PetDB, 69677, A_CUSTOM, 4)
+	self:AddCompanionAcquire(PetDB, 69677, A_CUSTOM, 4, A_CUSTOM, 36)
 
 	-- Pandaren Monk - 69541
 	AddPet(69541, 49665, R_RARE, GAME_WOTLK)
@@ -881,8 +891,286 @@ function addon:GetMiniPetTotal(PetDB)
 	AddPet(75906, 54847, R_RARE, GAME_WOTLK)
 	self:AddCompanionFlags(PetDB, 75906, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(PetDB, 75906, A_CUSTOM, 4)
+	
+	-- Aeon - 498784
+	AddPet(498784, 499202, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 498784, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionAcquire(PetDB, 498784, A_CUSTOM, 36)
+	
+	-- Ancient Guardian of Dawn - 499666
+	AddPet(499666, 499576,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499666, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499666, A_CUSTOM, 36)
+	
+	-- Kromlins Candle - 102100
+	AddPet(102100, 102100,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 102100, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 102100, A_CUSTOM, 36)
+	
+	-- Nightsaber Cub - 979864
+	AddPet(979864, 68841,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979864, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 979864, A_CUSTOM, 36)
+	
+	-- Sunblade Rune of Activation - 499213
+	AddPet(499213, 499388,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499213, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 499213, A_CUSTOM, 36)
+	
+	-- Onyx Serpent Hatchling - 499219
+	AddPet(499219, 499390,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499219, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 499219, A_CUSTOM, 36)
+	
+	-- Syd - 498797
+	AddPet(498797, 499305,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 498797, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 498797, A_CUSTOM, 36)
+	
+	-- Lootbot 3000 - 9930889
+	AddPet(9930889, 57000,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9930889, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9930889, A_CUSTOM, 36)
+	
+	-- Portable Transmogrifier - 2002012
+	AddPet(2002012, 1002087,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 2002012, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 2002012, A_CUSTOM, 36)
+	
+	-- Soul of the Aspects - 498798
+	AddPet(498798, 499306,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 498798, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 498798, A_CUSTOM, 36)
+	
+	-- Treasure Keeper - 985356
+	AddPet(985356, 99491,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 985356, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 985356, A_CUSTOM, 36)
+	
+	-- Wisper - 499763
+	AddPet(499763, 499637,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499763, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499763, A_CUSTOM, 36)
+	
+	-- Zao,  Calfling of Niuzao - 499667
+	AddPet(499667, 499577,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499667, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499667, A_CUSTOM, 36)
+	
+	-- Lil Nefarian - 499918
+	AddPet(499918, 499633,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499918, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499918, A_CUSTOM, 36)
+	
+	-- Book of Artisans - 750750
+	AddPet(750750, 750750, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 750750, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionAcquire(PetDB, 750750, A_CUSTOM, 36)
+	
+	-- Book of Ascension - 979602
+	AddPet(979602, 98457,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979602, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionAcquire(PetDB, 979602, A_CUSTOM, 36)
+	
+	-- Bloodforged Book of Ascension - 499908
+	AddPet(499908, 499920,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499908, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 499908, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	-- Wild Book of Ascension - 979616
+	AddPet(979616, 102133,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979616, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 979616, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	-- Drafted Book of Ascension - 999315
+	AddPet(999315, 99386,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 999315, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 999315, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	-- Nightmarish Book of Ascension - 979042
+	AddPet(979042, 98450,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979042, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 979042, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	-- Ruthless Book of Ascension - 999615
+	AddPet(999615, 91461,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 999615, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 999615, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	-- Verdant Book of Ascension - 979615
+	AddPet(979615, 98461,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979615, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 979615, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	-- Vilemus Fel Crystal - 800555
+	AddPet(800555, 800555,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 800555, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 800555, A_CUSTOM, 36, A_CUSTOM, 44)
+	
+	
+--OTHER CUSTOM
+	-- Bloody Rags - 966036
+	AddPet(966036, 100016, R_RARE, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 966036, F_ALLIANCE, F_HORDE, F_PVP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 966036, A_CUSTOM, 42)
+	
+	-- Greedy Demon - 979850
+	AddPet(979850, 98460, R_RARE, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979850, F_ALLIANCE, F_HORDE, F_STORE, F_WORLD_DROP, F_BOA)
+	self:AddCompanionAcquire(PetDB, 979850, A_CUSTOM, 39, A_CUSTOM, 36)
+	
+	-- Chi-Chi,  Hatchling of Chi-Ji - 499564
+	AddPet(499564, 499422, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499564, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499564, A_CUSTOM, 41)
+	
+	-- Kute - 499563
+	AddPet(499563, 499421, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499563, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499563, A_CUSTOM, 41)
+	
+	-- Pandaren Fire Spirit - 499562
+	AddPet(499562, 499420, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499562, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499562, A_CUSTOM, 41)
+	
+	-- Ra Kim - 499565
+	AddPet(499565, 499423, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 499565, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionAcquire(PetDB, 499565, A_CUSTOM, 41)
 
-	-- We only add the faction specific pets if the user is part of that faction
+	-- Decaying Flesh - 966114
+	AddPet(966114, 100018, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 966114, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 966114, A_CUSTOM, 40)
+	
+	-- Felfire Impling - 966367
+	AddPet(966367, 100566,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 966367, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 966367, A_CUSTOM, 40)
+	
+	-- Rotting Carcass - 965639
+	AddPet(965639, 100006,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 965639, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 965639, A_CUSTOM, 40)
+	
+	-- Giant Qiraji Shell - 965641
+	AddPet(965641, 100008,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 965641, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 965641, A_CUSTOM, 40)
+	
+	-- Scarab Shell - 965638
+	AddPet(965638, 100003,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 965638, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 965638, A_CUSTOM, 40)
+	
+	-- Idol of the Watcher - 965640
+	AddPet(965640, 100007,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 965640, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 965640, A_CUSTOM, 40)
+	
+	-- Lil Evil Eye - 966368
+	AddPet(966368, 100567,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 966368, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 966368, A_CUSTOM, 40)
+	
+	-- Rattling Bones - 966115
+	AddPet(966115, 100019,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 966115, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 966115, A_CUSTOM, 40)
+	
+	-- Burning Skull - 966116
+	AddPet(966116, 100020,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 966116, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 966116, A_CUSTOM, 40)
+	
+	-- Brilliant Kaliri - 498743
+	AddPet(498743, 499183, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 498743, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 498743, A_ACHIEVEMENT, 26149)
+	
+	-- Nuts Acorn - 498744
+	AddPet(498744, 499184,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 498744, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 498744, A_ACHIEVEMENT, 26148)
+	
+	-- Pet Cage - World First Archimonde - 842008
+	AddPet(842008, 842008,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842008, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842008, A_ACHIEVEMENT, 12493, A_ACHIEVEMENT, 14493)
+	
+	-- Pet Cage - World First Gruul - 842001
+	AddPet(842001, 842001,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842001, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842001, A_ACHIEVEMENT, 12477, A_ACHIEVEMENT, 14477)
+	
+	-- Pet Cage - World First Magtheridon - 842004
+	AddPet(842004, 842004,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842004, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842004, A_ACHIEVEMENT, 12478, A_ACHIEVEMENT, 14478)
+	
+	-- Pet Cage - World First Illidan Stormrage - 842009
+	AddPet(842009, 842009,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842009, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842009, A_ACHIEVEMENT, 12505, A_ACHIEVEMENT, 14505)
+	
+	-- Pet Cage - World First Malchezaar - 842002
+	AddPet(842002, 842002,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842002, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842002, A_ACHIEVEMENT, 12365, A_ACHIEVEMENT, 14365)
+	
+	-- Pet Cage - World First Kaelthas Sunstrider - 842007
+	AddPet(842007, 842007,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842007, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842007, A_ACHIEVEMENT, 12488, A_ACHIEVEMENT, 14488)
+	
+	-- Pet Cage - World First KilJaeden - 842010
+	AddPet(842010, 842010,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842010, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842010, A_ACHIEVEMENT, 12513, A_ACHIEVEMENT, 14513)
+	
+	-- Pet Cage - World First Lady Vashj - 842006
+	AddPet(842006, 842006,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842006, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842006, A_ACHIEVEMENT, 12484, A_ACHIEVEMENT, 14484)
+	
+	-- Pet Cage - World First Nightbane - 842003
+	AddPet(842003, 842003,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842003, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842003, A_ACHIEVEMENT, 12364, A_ACHIEVEMENT, 14364)
+	
+	-- Pet Cage - World First ZulJin - 842005
+	AddPet(842005, 842005,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842005, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842005, A_ACHIEVEMENT, 12371, A_ACHIEVEMENT, 14371)
+
+	-- Chaotic Saber Cub - 999864
+	AddPet(999864, 99985, R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 999864, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionAcquire(PetDB, 999864, A_ACHIEVEMENT, 6533, A_CUSTOM, 38)
+	
+	-- Crawling Claw - 999316
+	AddPet(999316, 99385,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 999316, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionAcquire(PetDB, 999316, A_CUSTOM, 38)
+	
+	-- Legions Lexicon - 1008018
+	AddPet(1008018, 1008017,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 1008018, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 1008018, A_CUSTOM, 38)
+	
+	-- Lump of Coal - 498762
+	AddPet(498762, 499192,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 498762, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionAcquire(PetDB, 498762, A_CUSTOM, 43)
+
+	-- Sigil of Geras - 82253
+	AddPet(82253, 79175, R_RARE, GAME_BC)
+	self:AddCompanionFlags(PetDB, 82253, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionAcquire(PetDB, 82253, A_VENDOR, 18525)
+
+
+-- We only add the faction specific pets if the user is part of that faction
 	if MY_FACTION == FACTION_ALLIANCE then
 		-- Shimmering Wyrmling -- 66096
 		AddPet(66096, 46820, R_RARE, GAME_WOTLK)

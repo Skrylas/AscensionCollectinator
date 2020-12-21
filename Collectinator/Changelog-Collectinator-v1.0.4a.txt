@@ -1,0 +1,8 @@
+v1.0.4a 12/20/2020
+Initial release based v1.0.4 (WotLK 3.3.5 base)
+- Corrected large tooltip bug caused by custom strings (actual bug in release version).
+- Added all Ascension mounts
+- Added all Ascension pets
+- Added few missing Blizzlike pets
+- Removed class restrictions hiding mounts
+--------------------------------------------------------------------------------------------------------

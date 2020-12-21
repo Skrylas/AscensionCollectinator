@@ -61,6 +61,6 @@ function addon:InitCustom(DB)
 	self:addLookupList(DB, 42, "Bloodbowl reward.")
 	self:addLookupList(DB, 43, "Drop from Grumpus from the Ascension Christmas event.")
 	self:addLookupList(DB, 44, "Seasonal box/reward.")
-	self:addLookupList(DB, 44, "PVP Reward.")
+	self:addLookupList(DB, 45, "PVP Reward.")
 end
 

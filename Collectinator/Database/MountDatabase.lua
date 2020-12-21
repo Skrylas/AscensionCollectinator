@@ -1842,11 +1842,6 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(499609, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 499609, A_CUSTOM, 37)
 	
-	-- Razor-Lined Reins of Dark Portent - 499171
-	AddMount(499171, 499364, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499171, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
-	self:AddCompanionAcquire(DB, 499171, A_CUSTOM, 37)
-	
 	-- Reins of the Grey Riding Yak - 499673
 	AddMount(499673, 499578, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(499673, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
@@ -2068,25 +2063,25 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(170025, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 170025, A_CUSTOM, 44)
 	
-		-- Prestigious War Horse - 170028
+	-- Prestigious War Horse - 170028
 	AddMount(170028, 170005, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(170028, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
-	self:AddCompanionAcquire(DB, 170028, A_CUSTOM, 44)
+	self:AddCompanionAcquire(DB, 170028, A_CUSTOM, 45)
 	
 	-- Prestigious War Wolf - 170031
 	AddMount(170031, 170006, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(170031, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
-	self:AddCompanionAcquire(DB, 170031, A_CUSTOM, 44)
+	self:AddCompanionAcquire(DB, 170031, A_CUSTOM, 45)
 	
 	-- Warsong Wolf - 499984
 	AddMount(499984, 499984, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(499984, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
-	self:AddCompanionAcquire(DB, 499984, A_CUSTOM, 44)
+	self:AddCompanionAcquire(DB, 499984, A_CUSTOM, 45)
 	
 	-- Silverwing Nightsaber - 499987
 	AddMount(499987, 499987, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(499987, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
-	self:AddCompanionAcquire(DB, 499987, A_CUSTOM, 44)
+	self:AddCompanionAcquire(DB, 499987, A_CUSTOM, 45)
 	
 	-- Silent Glider - 499212
 	AddMount(499212, 499387, R_ARTIFACT, GAME_ORIG)
@@ -2097,6 +2092,11 @@ function addon:GetMountTotal(DB)
 	AddMount(499186, 499379, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(499186, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOA)
 	self:AddCompanionAcquire(DB, 499186, A_ACHIEVEMENT, 13059, A_ACHIEVEMENT, 13060)
+	
+	-- Razor-Lined Reins of Dark Portent - 499171
+	AddMount(499171, 499364, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499171, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499171, A_CUSTOM, 45)
 
 
 -- QUEST
