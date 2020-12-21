@@ -974,37 +974,37 @@ function addon:GetMiniPetTotal(PetDB)
 	
 	-- Bloodforged Book of Ascension - 499908
 	AddPet(499908, 499920,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499908, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionFlags(PetDB, 499908, F_ALLIANCE, F_HORDE, F_STORE, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 499908, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Wild Book of Ascension - 979616
 	AddPet(979616, 102133,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979616, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
+	self:AddCompanionFlags(PetDB, 979616, F_ALLIANCE, F_HORDE, F_STORE, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 979616, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Drafted Book of Ascension - 999315
 	AddPet(999315, 99386,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 999315, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionFlags(PetDB, 999315, F_ALLIANCE, F_HORDE, F_STORE, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 999315, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Nightmarish Book of Ascension - 979042
 	AddPet(979042, 98450,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979042, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionFlags(PetDB, 979042, F_ALLIANCE, F_HORDE, F_STORE, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 979042, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Ruthless Book of Ascension - 999615
 	AddPet(999615, 91461,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 999615, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionFlags(PetDB, 999615, F_ALLIANCE, F_HORDE, F_STORE, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 999615, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Verdant Book of Ascension - 979615
 	AddPet(979615, 98461,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979615, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionFlags(PetDB, 979615, F_ALLIANCE, F_HORDE, F_STORE, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 979615, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Vilemus Fel Crystal - 800555
 	AddPet(800555, 800555,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 800555, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionFlags(PetDB, 800555, F_ALLIANCE, F_HORDE, F_STORE, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 800555, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Pit Lords Eye - 985357
@@ -1026,67 +1026,67 @@ function addon:GetMiniPetTotal(PetDB)
 	
 	-- Chi-Chi,  Hatchling of Chi-Ji - 499564
 	AddPet(499564, 499422, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499564, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionFlags(PetDB, 499564, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 499564, A_CUSTOM, 41)
 	
 	-- Kute - 499563
 	AddPet(499563, 499421, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499563, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionFlags(PetDB, 499563, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 499563, A_CUSTOM, 41)
 	
 	-- Pandaren Fire Spirit - 499562
 	AddPet(499562, 499420, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499562, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionFlags(PetDB, 499562, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 499562, A_CUSTOM, 41)
 	
 	-- Ra Kim - 499565
 	AddPet(499565, 499423, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499565, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
+	self:AddCompanionFlags(PetDB, 499565, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 499565, A_CUSTOM, 41)
 
 	-- Decaying Flesh - 966114
 	AddPet(966114, 100018, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 966114, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 966114, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 966114, A_CUSTOM, 40)
 	
 	-- Felfire Impling - 966367
 	AddPet(966367, 100566,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 966367, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 966367, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 966367, A_CUSTOM, 40)
 	
 	-- Rotting Carcass (Grubby) - 965639
 	AddPet(965639, 100006,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 965639, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 965639, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 965639, A_CUSTOM, 40)
 	
 	-- Giant Qiraji Shell (Il'ixx the terrible) - 965641
 	AddPet(965641, 100008,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 965641, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 965641, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 965641, A_CUSTOM, 40)
 	
 	-- Scarab Shell - 965638
 	AddPet(965638, 100003,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 965638, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 965638, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 965638, A_CUSTOM, 40)
 	
 	-- Idol of the Watcher - 965640
 	AddPet(965640, 100007,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 965640, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 965640, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 965640, A_CUSTOM, 40)
 	
 	-- Lil Evil Eye - 966368
 	AddPet(966368, 100567,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 966368, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 966368, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 966368, A_CUSTOM, 40)
 	
 	-- Rattling Bones - 966115
 	AddPet(966115, 100019,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 966115, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 966115, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 966115, A_CUSTOM, 40)
 	
 	-- Burning Skull - 966116
 	AddPet(966116, 100020,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 966116, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 966116, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 966116, A_CUSTOM, 40)
 	
 	-- Brilliant Kaliri - 498743
