@@ -1101,52 +1101,52 @@ function addon:GetMiniPetTotal(PetDB)
 	
 	-- Pet Cage - World First Archimonde - 842008
 	AddPet(842008, 842008,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842008, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842008, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842008, A_ACHIEVEMENT, 12493, A_ACHIEVEMENT, 14493)
 	
 	-- Pet Cage - World First Gruul - 842001
 	AddPet(842001, 842001,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842001, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842001, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842001, A_ACHIEVEMENT, 12477, A_ACHIEVEMENT, 14477)
 	
 	-- Pet Cage - World First Magtheridon - 842004
 	AddPet(842004, 842004,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842004, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842004, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842004, A_ACHIEVEMENT, 12478, A_ACHIEVEMENT, 14478)
 	
 	-- Pet Cage - World First Illidan Stormrage - 842009
 	AddPet(842009, 842009,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842009, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842009, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842009, A_ACHIEVEMENT, 12505, A_ACHIEVEMENT, 14505)
 	
 	-- Pet Cage - World First Malchezaar - 842002
 	AddPet(842002, 842002,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842002, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842002, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842002, A_ACHIEVEMENT, 12365, A_ACHIEVEMENT, 14365)
 	
 	-- Pet Cage - World First Kaelthas Sunstrider - 842007
 	AddPet(842007, 842007,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842007, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842007, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842007, A_ACHIEVEMENT, 12488, A_ACHIEVEMENT, 14488)
 	
 	-- Pet Cage - World First KilJaeden - 842010
 	AddPet(842010, 842010,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842010, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842010, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842010, A_ACHIEVEMENT, 12513, A_ACHIEVEMENT, 14513)
 	
 	-- Pet Cage - World First Lady Vashj - 842006
 	AddPet(842006, 842006,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842006, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842006, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842006, A_ACHIEVEMENT, 12484, A_ACHIEVEMENT, 14484)
 	
 	-- Pet Cage - World First Nightbane - 842003
 	AddPet(842003, 842003,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842003, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842003, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842003, A_ACHIEVEMENT, 12364, A_ACHIEVEMENT, 14364)
 	
 	-- Pet Cage - World First ZulJin - 842005
 	AddPet(842005, 842005,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 842005, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 842005, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP, F_REMOVED)
 	self:AddCompanionAcquire(PetDB, 842005, A_ACHIEVEMENT, 12371, A_ACHIEVEMENT, 14371)
 
 	-- Chaotic Saber Cub - 999864
