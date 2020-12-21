@@ -37,7 +37,7 @@ local R_COMMON, R_UNCOMMON, R_RARE, R_EPIC, R_LEGENDARY, R_ARTIFACT = 1, 2, 3, 4
 -------------------------------------------------------------------------------
 -- Origin
 -------------------------------------------------------------------------------
-local GAME_ORIG, GAME_TBC, GAME_WOTLK = 0, 1, 2
+local GAME_ORIG, GAME_BC, GAME_WOTLK = 0, 1, 2
 
 -------------------------------------------------------------------------------
 -- Filter flags
@@ -894,117 +894,117 @@ function addon:GetMiniPetTotal(PetDB)
 	
 	-- Aeon - 498784
 	AddPet(498784, 499202, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 498784, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionFlags(PetDB, 498784, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 498784, A_CUSTOM, 36)
 	
 	-- Ancient Guardian of Dawn - 499666
 	AddPet(499666, 499576,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499666, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionFlags(PetDB, 499666, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 499666, A_CUSTOM, 36)
 	
 	-- Kromlins Candle - 102100
 	AddPet(102100, 102100,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 102100, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionFlags(PetDB, 102100, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 102100, A_CUSTOM, 36)
 	
 	-- Nightsaber Cub - 979864
 	AddPet(979864, 68841,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979864, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 979864, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 979864, A_CUSTOM, 36)
 	
 	-- Sunblade Rune of Activation - 499213
 	AddPet(499213, 499388,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499213, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 499213, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 499213, A_CUSTOM, 36)
 	
 	-- Onyx Serpent Hatchling - 499219
 	AddPet(499219, 499390,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499219, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 499219, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 499219, A_CUSTOM, 36)
 	
 	-- Syd - 498797
 	AddPet(498797, 499305,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 498797, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 498797, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 498797, A_CUSTOM, 36)
 	
 	-- Lootbot 3000 - 9930889
 	AddPet(9930889, 57000,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 9930889, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 9930889, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 9930889, A_CUSTOM, 36)
 	
 	-- Portable Transmogrifier - 2002012
 	AddPet(2002012, 1002087,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 2002012, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 2002012, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 2002012, A_CUSTOM, 36)
 	
 	-- Soul of the Aspects - 498798
 	AddPet(498798, 499306,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 498798, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 498798, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 498798, A_CUSTOM, 36)
 	
 	-- Treasure Keeper - 985356
 	AddPet(985356, 99491,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 985356, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 985356, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 985356, A_CUSTOM, 36)
 	
 	-- Wisper - 499763
 	AddPet(499763, 499637,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499763, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 499763, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 499763, A_CUSTOM, 36)
 	
 	-- Zao,  Calfling of Niuzao - 499667
 	AddPet(499667, 499577,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499667, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 499667, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 499667, A_CUSTOM, 36)
 	
 	-- Lil Nefarian - 499918
 	AddPet(499918, 499633,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499918, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 499918, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 499918, A_CUSTOM, 36)
 	
 	-- Book of Artisans - 750750
 	AddPet(750750, 750750, R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 750750, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionFlags(PetDB, 750750, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 750750, A_CUSTOM, 36)
 	
 	-- Book of Ascension - 979602
 	AddPet(979602, 98457,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979602, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOE)
+	self:AddCompanionFlags(PetDB, 979602, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 979602, A_CUSTOM, 36)
 	
 	-- Bloodforged Book of Ascension - 499908
 	AddPet(499908, 499920,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 499908, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionFlags(PetDB, 499908, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 499908, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Wild Book of Ascension - 979616
 	AddPet(979616, 102133,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979616, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_BOE)
+	self:AddCompanionFlags(PetDB, 979616, F_ALLIANCE, F_HORDE, F_STORE, F_BOE)
 	self:AddCompanionAcquire(PetDB, 979616, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Drafted Book of Ascension - 999315
 	AddPet(999315, 99386,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 999315, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 999315, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 999315, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Nightmarish Book of Ascension - 979042
 	AddPet(979042, 98450,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979042, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 979042, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 979042, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Ruthless Book of Ascension - 999615
 	AddPet(999615, 91461,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 999615, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 999615, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 999615, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Verdant Book of Ascension - 979615
 	AddPet(979615, 98461,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 979615, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 979615, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 979615, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	-- Vilemus Fel Crystal - 800555
 	AddPet(800555, 800555,  R_ARTIFACT, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 800555, F_ALLIANCE, F_HORDE, F_ACHIEVEMENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 800555, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 800555, A_CUSTOM, 36, A_CUSTOM, 44)
 	
 	

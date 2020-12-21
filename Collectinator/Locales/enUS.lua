@@ -227,6 +227,7 @@ L["Gargantuan Ooze"] = true
 L["Geen"] = true
 L["General"] = true
 L["General Options"] = true
+L["G'eras"] = true
 L["Gimrizz Shadowcog"] = true
 L["Glutinous Ooze"] = true
 L["Gregor MacVince"] = true
