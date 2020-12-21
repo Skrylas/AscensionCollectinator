@@ -326,12 +326,12 @@ function addon:GetMountTotal(DB)
 
 	-- Horn of the Red Wolf - 16080
 	AddMount(16080, 12330, R_EPIC, GAME_ORIG)
-	AddMountFlags(16080, F_HORDE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16080, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16080, A_CUSTOM, 23)
 
 	-- Horn of the Arctic Wolf - 16081
 	AddMount(16081, 12351, R_EPIC, GAME_ORIG)
-	AddMountFlags(16081, F_HORDE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16081, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16081, A_CUSTOM, 23)
 
 	-------------------------------------------------------------------------------
@@ -369,12 +369,12 @@ function addon:GetMountTotal(DB)
 
 	-- Whistle of the Mottled Red Raptor - 16084
 	AddMount(16084, 8586, R_EPIC, GAME_ORIG)
-	AddMountFlags(16084, F_HORDE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16084, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16084, A_CUSTOM, 23)
 
 	-- Whistle of the Ivory Raptor - 17450
 	AddMount(17450, 13317, R_EPIC, GAME_ORIG)
-	AddMountFlags(17450, F_HORDE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(17450, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 17450, A_CUSTOM, 23)
 
 	-------------------------------------------------------------------------------
@@ -412,12 +412,12 @@ function addon:GetMountTotal(DB)
 
 	-- Green Kodo - 18991
 	AddMount(18991, 15292, R_EPIC, GAME_ORIG)
-	AddMountFlags(18991, F_HORDE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(18991, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 18991, A_CUSTOM, 23)
 
 	-- Teal Kodo - 18992
 	AddMount(18992, 15293, R_EPIC, GAME_ORIG)
-	AddMountFlags(18992, F_HORDE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(18992, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 18992, A_CUSTOM, 23)
 
 	-------------------------------------------------------------------------------
@@ -695,42 +695,42 @@ function addon:GetMountTotal(DB)
 
 	-- White Mechanostrider Mod B - 15779
 	AddMount(15779, 13326, R_EPIC, GAME_ORIG)
-	AddMountFlags(15779, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(15779, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 15779, A_CUSTOM, 23)
 
 	-- Icy Blue Mechanostrider Mod A - 17459
 	AddMount(17459, 13327, R_EPIC, GAME_ORIG)
-	AddMountFlags(17459, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(17459, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 17459, A_CUSTOM, 23)
 
 	-- Palomino Bridle - 16082
 	AddMount(16082, 12354, R_EPIC, GAME_ORIG)
-	AddMountFlags(16082, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16082, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16082, A_CUSTOM, 23)
 
 	-- White Stallion Bridle - 16083
 	AddMount(16083, 12353, R_EPIC, GAME_ORIG)
-	AddMountFlags(16083, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16083, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16083, A_CUSTOM, 23)
 
 	-- Frost Ram - 17460
 	AddMount(17460, 13329, R_EPIC, GAME_ORIG)
-	AddMountFlags(17460, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(17460, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 17460, A_CUSTOM, 23)
 
 	-- Black Ram - 17461
 	AddMount(17461, 13328, R_EPIC, GAME_ORIG)
-	AddMountFlags(17461, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(17461, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 17461, A_CUSTOM, 23)
 
 	-- Reins of the Nightsaber - 16055
 	AddMount(16055, 12303, R_EPIC, GAME_ORIG)
-	AddMountFlags(16055, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16055, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16055, A_CUSTOM, 23)
 
 	-- Reins of the Ancient Frostsaber - 16056
 	AddMount(16056, 12302, R_EPIC, GAME_ORIG)
-	AddMountFlags(16056, F_ALLIANCE, F_VENDOR, F_BOP, F_REMOVED)
+	AddMountFlags(16056, F_ALLIANCE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 16056, A_CUSTOM, 23)
 
 	-- Reins of the Wooly Mammoth - 59793
@@ -1094,7 +1094,7 @@ function addon:GetMountTotal(DB)
 
 	-- Brewfest Ram - 43899
 	AddMount(43899, 33976, R_RARE, GAME_BC)
-	AddMountFlags(43899, F_ALLIANCE, F_HORDE, F_SEASONAL, F_VENDOR, F_REMOVED, F_BOP)
+	AddMountFlags(43899, F_ALLIANCE, F_HORDE, F_SEASONAL, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(DB, 43899, A_VENDOR, 24468, A_VENDOR, 24510, A_SEASONAL, 6)
 
 	-- Great Brewfest Kodo - 49379
@@ -1356,17 +1356,17 @@ function addon:GetMountTotal(DB)
 --RETIRED
 	 -- Black Proto-Drake - 59976
 	AddMount(59976, 44164, R_EPIC, GAME_WOTLK)
-	AddMountFlags(59976, F_ALLIANCE, F_HORDE, F_BOP, F_REMOVED, F_ACHIEVEMENT)
+	AddMountFlags(59976, F_ALLIANCE, F_HORDE, F_BOP, F_ACHIEVEMENT)
 	self:AddCompanionAcquire(DB, 59976, A_ACHIEVEMENT, 2138)
 
 	 -- Plagued Proto-Drake - 60021
 	AddMount(60021, 44175, R_EPIC, GAME_WOTLK)
-	AddMountFlags(60021, F_ALLIANCE, F_HORDE, F_BOP, F_REMOVED, F_ACHIEVEMENT)
+	AddMountFlags(60021, F_ALLIANCE, F_HORDE, F_BOP, F_ACHIEVEMENT)
 	self:AddCompanionAcquire(DB, 60021, A_ACHIEVEMENT, 2137)
 
 	-- Amani War Bear - 43688
 	AddMount(43688, 33809, R_EPIC, GAME_BC)
-	AddMountFlags(43688, F_ALLIANCE, F_HORDE, F_BOP, F_REMOVED, F_RAID)
+	AddMountFlags(43688, F_ALLIANCE, F_HORDE, F_BOP, F_RAID)
 	self:AddCompanionAcquire(DB, 43688, A_CUSTOM, 31, A_ACHIEVEMENT, 430)
 
 	-- Swift Nether Drake - 37015
@@ -2065,12 +2065,12 @@ function addon:GetMountTotal(DB)
 	
 	-- Prestigious War Horse - 170028
 	AddMount(170028, 170005, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(170028, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
+	AddMountFlags(170028, F_ALLIANCE, F_HORDE, F_PVP, F_BOA, F_REMOVED)
 	self:AddCompanionAcquire(DB, 170028, A_CUSTOM, 45)
 	
 	-- Prestigious War Wolf - 170031
 	AddMount(170031, 170006, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(170031, F_ALLIANCE, F_HORDE, F_PVP, F_BOA)
+	AddMountFlags(170031, F_ALLIANCE, F_HORDE, F_PVP, F_BOA, F_REMOVED)
 	self:AddCompanionAcquire(DB, 170031, A_CUSTOM, 45)
 	
 	-- Warsong Wolf - 499984

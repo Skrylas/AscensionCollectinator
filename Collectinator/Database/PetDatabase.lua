@@ -244,7 +244,7 @@ function addon:GetMiniPetTotal(PetDB)
 
 	-- Scorched Stone - 45890
 	AddPet(45890, 34955, R_RARE, GAME_TBC)
-	self:AddCompanionFlags(PetDB, 45890, F_ALLIANCE, F_HORDE, F_INSTANCE, F_SEASONAL, F_MOB_DROP, F_BOP, F_REMOVED)
+	self:AddCompanionFlags(PetDB, 45890, F_ALLIANCE, F_HORDE, F_INSTANCE, F_SEASONAL, F_MOB_DROP, F_BOP)
 	self:AddCompanionAcquire(PetDB, 45890, A_MOB, 25740, A_SEASONAL, 4)
 
 	-- Clockwork Rocket Bot - 54187
@@ -750,54 +750,54 @@ function addon:GetMiniPetTotal(PetDB)
 --COLLECTORS EDITION
 	-- Diablo Stone - 17708
 	AddPet(17708, 13584, R_RARE, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 17708, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 17708, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 17708, A_ACHIEVEMENT, 662)
 
 	-- Panda Collar - 17707
 	AddPet(17707, 13583, R_RARE, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 17707, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 17707, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 17707, A_ACHIEVEMENT, 663)
 
 	-- Zergling Leash - 17709
 	AddPet(17709, 13582, R_RARE, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 17709, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 17709, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 17709, A_ACHIEVEMENT, 664)
 
 	-- Lurky's Egg - 24988
 	AddPet(24988, 30360, R_RARE, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 24988, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 24988, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 24988, A_CUSTOM, 10)
 
 	-- Netherwhelp's Collar - 32298
 	AddPet(32298, 25535, R_RARE, GAME_TBC)
-	self:AddCompanionFlags(PetDB, 32298, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 32298, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 32298, A_ACHIEVEMENT, 665)
 
 	-- Frosty's Collar - 52615
 	AddPet(52615, 39286, R_RARE, GAME_WOTLK)
-	self:AddCompanionFlags(PetDB, 52615, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 52615, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 52615, A_ACHIEVEMENT, 683)
 
 	-- Mini Thor - 78381
 	AddPet(78381, 56806, R_RARE, GAME_WOTLK)
-	self:AddCompanionFlags(PetDB, 78381, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_BOA)
+	self:AddCompanionFlags(PetDB, 78381, F_ALLIANCE, F_HORDE, F_COLLECTORS, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 78381, A_ACHIEVEMENT, 4824)
 
 --BLIZZ CON
 	-- Blue Murloc Egg - 24696 (Murky)
 	AddPet(24696, 20371, R_RARE, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 24696, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_BOA)
+	self:AddCompanionFlags(PetDB, 24696, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 24696, A_ACHIEVEMENT, 411)
 
 	-- Heavy Murloc Egg
 	AddPet(66030, 45180, R_RARE, GAME_WOTLK)
-	self:AddCompanionFlags(PetDB, 66030, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_BOP)
+	self:AddCompanionFlags(PetDB, 66030, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOP)
 	self:AddCompanionAcquire(PetDB, 66030, A_ACHIEVEMENT, 3536)
 
 --PROMO
 	-- Pink Murloc Egg - 27241 (Gurky)
 	AddPet(27241, 22114, R_RARE, GAME_ORIG)
-	self:AddCompanionFlags(PetDB, 27241, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_BOA)
+	self:AddCompanionFlags(PetDB, 27241, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_REMOVED, F_BOA)
 	self:AddCompanionAcquire(PetDB, 27241, A_CUSTOM, 6)
 
 	-- Polar Bear Collar - 28505 (Poley)
