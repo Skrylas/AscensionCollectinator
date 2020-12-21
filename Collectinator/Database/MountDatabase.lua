@@ -1063,9 +1063,9 @@ function addon:GetMountTotal(DB)
 	-- Mounts for Alliance AND Horde.
 	-------------------------------------------------------------------------------
 	-- Swift Zhevra - 49322
-	AddMount(49322, 37719, R_EPIC, GAME_BC)
-	AddMountFlags(49322, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_BOP)
-	self:AddCompanionAcquire(DB, 49322, A_ACHIEVEMENT, 1436)
+	AddMount(49322, 37719, R_ARTIFACT, GAME_BC)
+	AddMountFlags(49322, F_ALLIANCE, F_HORDE, F_SPEC_EVENT, F_STORE, F_BOP)
+	self:AddCompanionAcquire(DB, 49322, A_ACHIEVEMENT, 1436, A_CUSTOM, 36)
 
 	-- X-53 Touring Rocket - 75973
 	AddMount(75973, 54860, R_EPIC, GAME_WOTLK)
