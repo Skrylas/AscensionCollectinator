@@ -2107,12 +2107,6 @@ function addon:GetMountTotal(DB)
 	AddMount(83102, 101227, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(83102, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
 	self:AddCompanionAcquire(DB, 83102, A_CUSTOM, 38)
-	
-	-- Personal Reins of the Illidari Felstalker - 499940
-	AddMount(499940, 101255, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(499940, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
-	self:AddCompanionAcquire(DB, 499940, A_CUSTOM, 38)
-
 
 -- QUEST
 	-- Reins of the Crimson Deathcharger - 73313
