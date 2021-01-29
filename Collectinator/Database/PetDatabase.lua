@@ -1173,6 +1173,51 @@ function addon:GetMiniPetTotal(PetDB)
 	AddPet(82253, 79175, R_RARE, GAME_BC)
 	self:AddCompanionFlags(PetDB, 82253, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
 	self:AddCompanionAcquire(PetDB, 82253, A_VENDOR, 18525)
+	
+		-- Sigil of Qormaladon - 79084
+	AddPet(79084, 79279,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 79084, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 79084, A_CUSTOM, 38)
+	
+	-- Sigil of the Twisting Nether Felguard - 79085
+	AddPet(79085, 79280,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 79085, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 79085, A_CUSTOM, 38)
+	
+	-- Sigil of Beelzebub - 79086
+	AddPet(79086, 79281,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 79086, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 79086, A_CUSTOM, 38)
+	
+	-- Dungeon Illuminator - 83050
+	AddPet(83050, 101169,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 83050, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 83050, A_CUSTOM, 36)
+	
+	-- Unstable Lightwell - 83101
+	AddPet(83101, 101180,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 83101, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 83101, A_CUSTOM, 38)
+	
+	-- Kleptomanic Demon Leash - 83086
+	AddPet(83086, 101172,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 83086, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 83086, A_CUSTOM, 36)
+	
+	-- Transmogrifier Gimbly - 83087
+	AddPet(83087, 101173,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 83087, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 83087, A_CUSTOM, 36)
+	
+	-- Alliance Balloon - 83099
+	AddPet(83099, 101178,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 83099, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 83099, A_CUSTOM, 38)
+	
+	-- Horde Balloon - 83100
+	AddPet(83100, 101179,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 83100, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
+	self:AddCompanionAcquire(PetDB, 83100, A_CUSTOM, 38)
 
 --SIGILS
 	-- Sigil of 7:XT - 82068

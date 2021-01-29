@@ -1,3 +1,8 @@
+v1.0.4a 01/28/2021
+Felforged release update
+- Updated for new Ascension mounts
+- Updated for new Ascension pets
+--------------------------------------------------------------------------------------------------------
 v1.0.4a 12/20/2020
 Initial release based v1.0.4 (WotLK 3.3.5 base)
 - Corrected large tooltip bug caused by custom strings (actual bug in release version).

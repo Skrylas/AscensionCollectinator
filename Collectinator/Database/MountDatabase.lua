@@ -2098,6 +2098,21 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(499171, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 499171, A_CUSTOM, 45)
 
+	-- Living Infernal Core - 79024
+	AddMount(79024, 79239, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(79024, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	self:AddCompanionAcquire(DB, 79024, A_CUSTOM, 38)
+	
+	-- Tyrael's Charger - 83102
+	AddMount(83102, 101227, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(83102, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	self:AddCompanionAcquire(DB, 83102, A_CUSTOM, 38)
+	
+	-- Personal Reins of the Illidari Felstalker - 499940
+	AddMount(499940, 101255, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499940, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	self:AddCompanionAcquire(DB, 499940, A_CUSTOM, 38)
+
 
 -- QUEST
 	-- Reins of the Crimson Deathcharger - 73313
