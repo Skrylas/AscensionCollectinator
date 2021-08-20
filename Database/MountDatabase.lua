@@ -1936,7 +1936,27 @@ function addon:GetMountTotal(DB)
 	AddMount(499874, 499880, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(499874, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 499874, A_CUSTOM, 37)
-
+	
+	-- Fiendish Hellfire Core - 79059
+	AddMount(79059, 79248, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(79059, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 79059, A_CUSTOM, 37)
+	
+	-- Dim Coldflame Core - 79040
+	AddMount(79040, 79243, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(79040, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 79040, A_CUSTOM, 37)
+	
+	-- Biting Frostshard Core - 79045
+	AddMount(79045, 79245, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(79045, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 79045, A_CUSTOM, 37)	
+	
+	-- Sigil of the Crimson Skyblazer - 84279
+	AddMount(84279, 1175625, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(84279, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 84279, A_CUSTOM, 37)	
+		
 -- OTHER CUSTOM
 	-- Arboreal Gulper - 498616
 	AddMount(498616, 499181, R_ARTIFACT, GAME_BC)
@@ -2107,6 +2127,12 @@ function addon:GetMountTotal(DB)
 	AddMount(83102, 101227, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(83102, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
 	self:AddCompanionAcquire(DB, 83102, A_CUSTOM, 38)
+	
+	-- Reins of the Prestigious Bloodforged Courser - 84194 - UNKNOWN WHERE THIS COMES FROM
+	AddMount(84194, 97321, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(84194, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
+	self:AddCompanionAcquire(DB, 84194, A_CUSTOM, 38)
+		
 
 -- QUEST
 	-- Reins of the Crimson Deathcharger - 73313

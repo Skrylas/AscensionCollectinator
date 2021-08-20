@@ -1012,6 +1012,20 @@ function addon:GetMiniPetTotal(PetDB)
 	self:AddCompanionFlags(PetDB, 985357, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 985357, A_CUSTOM, 36)
 	
+	-- Reborn Book of Ascension - 84287
+	AddPet(84287, 637848,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 84287, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 84287, A_CUSTOM, 36)
+	
+	-- Lil Alar - 84184
+	AddPet(84184, 97320,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 84184, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 84184, A_CUSTOM, 36)	
+	
+	-- Portable Silas Darkmoon - 999317
+	AddPet(999317, 998100,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 999317, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 999317, A_CUSTOM, 36)	
 	
 --OTHER CUSTOM
 	-- Bloody Rags (Troll Berserker) - 966036
@@ -1174,7 +1188,7 @@ function addon:GetMiniPetTotal(PetDB)
 	self:AddCompanionFlags(PetDB, 82253, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOE)
 	self:AddCompanionAcquire(PetDB, 82253, A_VENDOR, 18525)
 	
-		-- Sigil of Qormaladon - 79084
+	-- Sigil of Qormaladon - 79084
 	AddPet(79084, 79279,  R_ARTIFACT, GAME_ORIG)
 	self:AddCompanionFlags(PetDB, 79084, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(PetDB, 79084, A_CUSTOM, 38)
@@ -1218,7 +1232,12 @@ function addon:GetMiniPetTotal(PetDB)
 	AddPet(83100, 101179,  R_ARTIFACT, GAME_ORIG)
 	self:AddCompanionFlags(PetDB, 83100, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOP)
 	self:AddCompanionAcquire(PetDB, 83100, A_CUSTOM, 38)
-
+	
+	-- Lil Chromaggus Whistle - 84200 - UNKNOWN WHERE THIS COMES FROM
+	AddPet(84200, 97331,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 84200, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 84200, A_CUSTOM, 38)
+	
 --SIGILS
 	-- Sigil of 7:XT - 82068
 	AddPet(82068, 60025, R_RARE, GAME_ORIG)
