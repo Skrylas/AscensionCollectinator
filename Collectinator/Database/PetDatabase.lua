@@ -1238,6 +1238,10 @@ function addon:GetMiniPetTotal(PetDB)
 	self:AddCompanionFlags(PetDB, 84200, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 84200, A_CUSTOM, 38)
 	
+	-- Microbot 8D - 84776 - UNKNOWN WHERE THIS COMES FROM
+	AddPet(84776, 246188,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 84776, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 84776, A_CUSTOM, 38)	
 --SIGILS
 	-- Sigil of 7:XT - 82068
 	AddPet(82068, 60025, R_RARE, GAME_ORIG)

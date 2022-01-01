@@ -1450,6 +1450,11 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(42777, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 42777, A_CUSTOM, 1, A_CUSTOM, 36)
 
+	-- Reins of the Swift Spectral Tiger (HD) - 499911
+	AddMount(499911, 33225, R_ARTIFACT, GAME_BC)
+	AddMountFlags(499911, F_ALLIANCE, F_HORDE, F_TCG, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499911, A_CUSTOM, 1, A_CUSTOM, 36)
+
 	-- X-51 Nether-Rocket - 46197
 	AddMount(46197, 35225, R_RARE, GAME_BC)
 	AddMountFlags(46197, F_ALLIANCE, F_HORDE, F_TCG)
@@ -1947,6 +1952,11 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(79040, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 79040, A_CUSTOM, 37)
 	
+	-- Dim Coldflame Infernal - 79042  --ItemID may not be 79245, unsure why this mount has 2 spellIDs
+	AddMount(79042, 79243, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(79042, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 79042, A_CUSTOM, 37)
+	
 	-- Biting Frostshard Core - 79045
 	AddMount(79045, 79245, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(79045, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
@@ -1956,7 +1966,17 @@ function addon:GetMountTotal(DB)
 	AddMount(84279, 1175625, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(84279, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 84279, A_CUSTOM, 37)	
-		
+	
+	-- Darkmoon Dirigible - 84794
+	AddMount(84794, 246192, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(84794, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 84794, A_CUSTOM, 37)
+	
+	-- Branch of the Wandering Ancient - 979879
+	AddMount(979879, 603200, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(979879, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 979879, A_CUSTOM, 37)
+	
 -- OTHER CUSTOM
 	-- Arboreal Gulper - 498616
 	AddMount(498616, 499181, R_ARTIFACT, GAME_BC)
@@ -2010,7 +2030,7 @@ function addon:GetMountTotal(DB)
 
 	-- Gurubashi Blood Raptor - 170040
 	AddMount(170040, 170009, R_ARTIFACT, GAME_ORIG)
-	AddMountFlags(170040, F_ALLIANCE, F_HORDE, F_MOB_DROP, F_REMOVED, F_BOA)
+	AddMountFlags(170040, F_ALLIANCE, F_HORDE, F_BOA)
 	self:AddCompanionAcquire(DB, 170040, A_CUSTOM, 42)
 	
 	-- Ironclad War Wolf - 170013
@@ -2132,7 +2152,11 @@ function addon:GetMountTotal(DB)
 	AddMount(84194, 97321, R_ARTIFACT, GAME_ORIG)
 	AddMountFlags(84194, F_ALLIANCE, F_HORDE, F_VENDOR, F_BOA)
 	self:AddCompanionAcquire(DB, 84194, A_CUSTOM, 38)
-		
+	
+	-- Gurubashi Undead Ravasaur - 170040
+	AddMount(170037, 170008, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(170037, F_ALLIANCE, F_HORDE, F_BOA)
+	self:AddCompanionAcquire(DB, 170037, A_CUSTOM, 42)	
 
 -- QUEST
 	-- Reins of the Crimson Deathcharger - 73313
