@@ -1242,6 +1242,18 @@ function addon:GetMiniPetTotal(PetDB)
 	AddPet(84776, 246188,  R_ARTIFACT, GAME_ORIG)
 	self:AddCompanionFlags(PetDB, 84776, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 84776, A_CUSTOM, 38)	
+	
+	-- Necrotic Book of Ascension - 979043
+	AddPet(979043, 6300095,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 979043, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 979043, A_CUSTOM, 36)
+	
+	-- Spiteful Apparition - 102103
+	AddPet(102103, 102103,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 102103, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 102103, A_CUSTOM, 36)
+	
+	
 --SIGILS
 	-- Sigil of 7:XT - 82068
 	AddPet(82068, 60025, R_RARE, GAME_ORIG)

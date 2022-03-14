@@ -1977,6 +1977,26 @@ function addon:GetMountTotal(DB)
 	AddMountFlags(979879, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
 	self:AddCompanionAcquire(DB, 979879, A_CUSTOM, 37)
 	
+	-- Warforged Nightmare - 499762
+	AddMount(499762, 499636, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(499762, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 499762, A_CUSTOM, 37)
+	
+	-- Hand of Hrestimorak - 9931315
+	AddMount(9931315, 1777038, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(9931315, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 9931315, A_CUSTOM, 37)
+	
+	-- Viridian Phase-Hunter - 91930
+	AddMount(91930, 1777068, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(91930, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 91930, A_CUSTOM, 37)
+	
+	-- Dark Iron Hound - 91929
+	AddMount(91929, 1777069, R_ARTIFACT, GAME_ORIG)
+	AddMountFlags(91929, F_ALLIANCE, F_HORDE, F_STORE, F_BOA)
+	self:AddCompanionAcquire(DB, 91929, A_CUSTOM, 37)
+	
 -- OTHER CUSTOM
 	-- Arboreal Gulper - 498616
 	AddMount(498616, 499181, R_ARTIFACT, GAME_BC)
