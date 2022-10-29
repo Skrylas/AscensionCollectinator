@@ -1252,7 +1252,281 @@ function addon:GetMiniPetTotal(PetDB)
 	AddPet(102103, 102103,  R_ARTIFACT, GAME_ORIG)
 	self:AddCompanionFlags(PetDB, 102103, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
 	self:AddCompanionAcquire(PetDB, 102103, A_CUSTOM, 36)
+
+	-- White Murloc Egg - 28487
+	AddPet(28487, 22780,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 28487, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 28487, A_CUSTOM, 37)
 	
+	-- Silver Pig Coin - 45175
+	AddPet(45175, 34519,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 45175, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 45175, A_CUSTOM, 37)
+	
+	-- Withers - 9931385
+	AddPet(9931385, 46325,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931385, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931385, A_CUSTOM, 37)
+	
+	-- Enchanted Jade - 9931400
+	AddPet(9931400, 46894,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931400, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931400, A_CUSTOM, 37)
+	
+	-- Enchanted Onyx - 67527
+	AddPet(67527, 48527,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 67527, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 67527, A_CUSTOM, 37)
+	
+	-- Enchanted Purple Jade - 9931401
+	AddPet(9931401, 49664,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931401, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931401, A_CUSTOM, 37)
+	
+	-- Celestial Dragon - 75613
+	AddPet(75613, 54810,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 75613, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 75613, A_CUSTOM, 37)
+	
+	-- De-Weaponized Mechanical Companion - 9931388
+	AddPet(9931388, 60216,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931388, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931388, A_CUSTOM, 37)
+	
+	-- Pebble - 9931379
+	AddPet(9931379, 60869,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931379, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931379, A_CUSTOM, 37)
+	
+	-- Rustberg Gull - 9931390
+	AddPet(9931390, 63355,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931390, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931390, A_CUSTOM, 37)
+	
+	-- Clockwork Gnome - 9931407
+	AddPet(9931407, 64372,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931407, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931407, A_CUSTOM, 37)
+	
+	-- Fox Kit - 9931395
+	AddPet(9931395, 64403,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931395, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931395, A_CUSTOM, 37)
+	
+	-- Tiny Shale Spider - 9931398
+	AddPet(9931398, 64494,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931398, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931398, A_CUSTOM, 37)
+	
+	-- Snail Shell - 9931391
+	AddPet(9931391, 66073,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931391, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931391, A_CUSTOM, 37)
+	
+	-- Mr. Grubbs - 9931397
+	AddPet(9931397, 66076,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931397, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931397, A_CUSTOM, 37)
+	
+	-- Enchanted Lantern - 9931386
+	AddPet(9931386, 67274,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931386, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931386, A_CUSTOM, 37)
+	
+	-- Magic Lamp - 9931387
+	AddPet(9931387, 67275,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931387, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931387, A_CUSTOM, 37)
+	
+	-- Elementium Geode - 9931393
+	AddPet(9931393, 67282,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931393, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931393, A_CUSTOM, 37)
+	
+	-- Owlkin Hatchling - 9931381
+	AddPet(9931381, 68618,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931381, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931381, A_CUSTOM, 37)
+	
+	-- Moonkin Hatchling - 9931382
+	AddPet(9931382, 68619,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931382, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931382, A_CUSTOM, 37)
+	
+	-- Lashtail Hatchling - 9931392
+	AddPet(9931392, 69251,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931392, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931392, A_CUSTOM, 37)
+	
+	-- Legs - 9931394
+	AddPet(9931394, 69648,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931394, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931394, A_CUSTOM, 37)
+	
+	-- Crimson Lasher - 9931389
+	AddPet(9931389, 70160,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931389, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931389, A_CUSTOM, 37)
+
+	-- Grell Moss - 9931396
+	AddPet(9931396, 72134,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931396, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931396, A_CUSTOM, 37)
+	
+	-- Darkmoon Monkey - 9931355
+	AddPet(9931355, 73764,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931355, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931355, A_CUSTOM, 44)
+	
+	-- Darkmoon Turtle - 9931356
+	AddPet(9931356, 73765,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931356, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931356, A_CUSTOM, 44)
+	
+	-- Darkmoon Zeppelin - 9931361
+	AddPet(9931361, 73905,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931361, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931361, A_CUSTOM, 44)
+	
+	-- Darkmoon Cub - 9931359
+	AddPet(9931359, 74981,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931359, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931359, A_CUSTOM, 44)
+	
+	-- Darkmoon Rabbit - 9931358
+	AddPet(9931358, 80008,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931358, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931358, A_CUSTOM, 44)
+	
+	-- Sapphire Cub - 9931399
+	AddPet(9931399, 82775,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931399, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931399, A_CUSTOM, 37)
+	
+	-- Baneling - 9931402
+	AddPet(9931402, 90177,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931402, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931402, A_CUSTOM, 37)
+	
+	-- Darkmoon Hatchling - 9931360
+	AddPet(9931360, 91003,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931360, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931360, A_CUSTOM, 44)
+	
+	-- Darkmoon Eye - 9931357
+	AddPet(9931357, 91040,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931357, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931357, A_CUSTOM, 47)
+	
+	-- Sigil of Goldilocks - 92453
+	AddPet(92453, 97393,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 92453, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 92453, A_CUSTOM, 44)
+	
+	-- Corgi Pup - 9931384
+	AddPet(9931384, 136925,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931384, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931384, A_CUSTOM, 37)
+	
+	-- Corgnelius - 9931383
+	AddPet(9931383, 140320,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931383, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931383, A_CUSTOM, 37)
+	
+	-- [HR] Tike Myson - 101500
+	AddPet(101500, 500750,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 101500, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 101500, A_CUSTOM, 47)
+	
+	-- Tike Myson - 101501
+	AddPet(101501, 500751,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 101501, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 101501, A_CUSTOM, 47)
+	
+	-- Pet Cage - World First Magtheridon 25 HC - 842104
+	AddPet(842104, 842104,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 842104, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 842104, A_CUSTOM, 47)
+	
+	-- Pet Cage - World First Lady Vashj Ascended (25 Player) - 942100
+	AddPet(942100, 942100,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 942100, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 942100, A_CUSTOM, 47)
+	
+	-- Pet Cage - Wildcard World First Lady Vashj Ascended (10 Player) - 942101
+	AddPet(942101, 942101,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 942101, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 942101, A_CUSTOM, 47)
+	
+	-- Pet Cage - Wildcard World First Lady Vashj Ascended (25 Player) - 942102
+	AddPet(942102, 942102,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 942102, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 942102, A_CUSTOM, 47)
+	
+	-- Mobile Stable Master - 9931336
+	AddPet(9931336, 1777070,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931336, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931336, A_CUSTOM, 47)
+	
+	-- Tiny Amani Elite War Bear (Green) - 9931476
+	AddPet(9931476, 1777230,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931476, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931476, A_CUSTOM, 37)
+	
+	-- Tiny Amani Elite War Bear (Brown) - 13801564
+	AddPet(13801564, 1777231,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 13801564, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 13801564, A_CUSTOM, 37)
+	
+	-- Tiny Amani Elite War Bear (Yellow) - 13801565
+	AddPet(13801565, 1777232,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 13801565, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 13801565, A_CUSTOM, 37)
+	
+	-- Tiny Amani Elite War Bear (Red) - 13801566
+	AddPet(13801566, 1777233,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 13801566, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 13801566, A_CUSTOM, 37)
+	
+	-- Tiny Amani Elite War Bear (Pink) - 13801567
+	AddPet(13801567, 1777234,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 13801567, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 13801567, A_CUSTOM, 37)
+	
+	-- Tiny Amani Elite War Bear (Purple) - 13801568
+	AddPet(13801568, 1777235,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 13801568, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 13801568, A_CUSTOM, 37)
+	
+	-- Baa'l - 9931477
+	AddPet(9931477, 1777245,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931477, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931477, A_CUSTOM, 44)
+	
+	-- Miimii - 9931485
+	AddPet(9931485, 1777253,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931485, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931485, A_CUSTOM, 44)
+	
+	-- Sir Snips - 9931501
+	AddPet(9931501, 1777269,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931501, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931501, A_CUSTOM, 44)
+	
+	-- Bucketshell - 9931502
+	AddPet(9931502, 1777270,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931502, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931502, A_CUSTOM, 44)
+	
+	-- Unleashed Book of Ascension - 9931566
+	AddPet(9931566, 1777357,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 9931566, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 9931566, A_CUSTOM, 44)
+	
+	-- Pet Cage - World First Kael'thas Sunstrider (25 Player) - 1842007
+	AddPet(1842007, 1842007,  R_ARTIFACT, GAME_ORIG)
+	self:AddCompanionFlags(PetDB, 1842007, F_ALLIANCE, F_HORDE, F_STORE, F_BOP)
+	self:AddCompanionAcquire(PetDB, 1842007, A_CUSTOM, 47)	
 	
 --SIGILS
 	-- Sigil of 7:XT - 82068
